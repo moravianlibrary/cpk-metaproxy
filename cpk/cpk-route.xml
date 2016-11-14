@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<route xmlns="http://indexdata.com/metaproxy" id="cpk">
+
+	<!--
+		Convert incoming query to RPN.
+	-->
+	<filter type="cql_rpn">
+		<conversion file="cpk/cpk.pqf"/>
+	</filter>
+
+
+	<!--
+		Map Z39.50 index names to Solr index names.
+	-->
+	<filter type="query_rewrite">
+		<xslt stylesheet="cpk/cpk-pql-to-solr.xsl"/>
+	</filter>
+
+
+	<!--
+		Output formats
+	-->
+	<filter type="record_transform">
+		<retrievalinfo  xmlns="http://indexdata.com/yaz" version="1.0">
+			<retrieval syntax="usmarc">
+				<backend name="">
+					<xslt stylesheet="cpk/solrmarc-to-marc21.xsl"/>
+					<xslt stylesheet="cpk/collection-to-record.xsl"/>
+					<marc inputformat="xml" inputcharset="utf-8" outputformat="marc" outputcharset="utf-8"/>
+				</backend>
+			</retrieval>
+		</retrievalinfo>
+	</filter>
+
+
+	<!--
+		Use zoom backend to communicate with Solr.
+	-->
+	<filter refid="zoom"/>
+
+</route>

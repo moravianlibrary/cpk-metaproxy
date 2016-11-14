@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<metaproxy xmlns="http://indexdata.com/metaproxy" xmlns:xi="http://www.w3.org/2001/XInclude" version="1.0">
+
+	<start route="start"/>
+
+	<filters>
+		<xi:include href="zoom.xml"/>
+	</filters>
+
+	<routes>
+		<route id="start">
+			<filter type="frontend_net">
+				<threads>10</threads>
+				<port>@:9000</port>
+			</filter>
+
+			<filter type="virt_db">
+                                <virtual route="cpk">
+                                        <database>cpk</database>
+                                </virtual>
+                        </filter>
+
+                        <filter type="bounce"/>
+
+		</route>
+
+		<xi:include href="cpk/cpk-route.xml"/>
+
+	</routes>
+
+</metaproxy>
