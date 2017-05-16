@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<metaproxy xmlns="http://indexdata.com/metaproxy" xmlns:xi="http://www.w3.org/2001/XInclude" version="1.0">
+
+	<start route="start"/>
+
+	<filters>
+		<filter xmlns="http://indexdata.com/metaproxy" xmlns:e="http://explain.z3950.org/dtd/2.0/" xmlns:xi="http://www.w3.org/2001/XInclude" id="zoom" type="zoom">
+
+			<torus xsldir="xsl" element_transform="custom" element_raw="raw">
+				<xi:include href="records.xml"/>
+			</torus>
+
+			<fieldmap cql="cql.serverChoice" ccl="term">
+				<title lang="en">All Metadata fields</title>
+			</fieldmap>
+
+			<fieldmap cql="cql.anywhere" ccl="fulltext">
+				<title lang="en">All Metadata fields and full texts</title>
+			</fieldmap>
+
+			<zoom timeout="20" proxy_timeout="1"/>
+
+		</filter>
+	</filters>
+
+	<routes>
+
+		<route id="start">
+
+			<filter type="frontend_net">
+				<threads>10</threads>
+				<port>@:9001</port>
+			</filter>
+
+			<xi:include href="databases.xml"/>
+
+			<filter type="bounce"/>
+
+		</route>
+
+		<xi:include href="cpk/cpk-route.xml"/>
+
+	</routes>
+
+</metaproxy>

@@ -1,0 +1,22 @@
+<profiles>
+
+	<url>http://frontie.cpk-infra.mzk.cz:8983</url>
+
+	<profile name="cpk1">
+		<institutions>
+			<institution>2/Library/brno/MZK/</institution>
+			<institution>2/Library/praha/NKP/</institution>
+		</institutions>
+		<filters>
+		</filters>
+	</profile>
+
+	<profile name="cpk2">
+		<institutions>
+			<institution>2/Library/praha/NLK/</institution>
+		</institutions>
+		<filters>
+		</filters>
+	</profile>
+
+</profiles>

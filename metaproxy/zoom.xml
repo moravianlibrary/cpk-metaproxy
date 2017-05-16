@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<filter xmlns="http://indexdata.com/metaproxy" xmlns:e="http://explain.z3950.org/dtd/2.0/" xmlns:xi="http://www.w3.org/2001/XInclude" id="zoom" type="zoom">
+	<torus xsldir="xsl" element_transform="custom" element_raw="raw">
+		<xi:include href="records.xml"/>
+	</torus>
+
+	<fieldmap cql="cql.serverChoice" ccl="term">
+		<title lang="en">All Metadata fields</title>
+	</fieldmap>
+	<fieldmap cql="cql.anywhere" ccl="fulltext">
+		<title lang="en">All Metadata fields and full texts</title>
+	</fieldmap>
+
+	<zoom timeout="20" proxy_timeout="1"/>
+
+</filter>
