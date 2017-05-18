@@ -10,11 +10,15 @@ foreach ($profilesXml->profile as $profileXml) {
 		'institutions' => array(),
 		'filters' => array(),
 	);
-	foreach($profileXml->institutions->institution as $institution) {
-		$profile['institutions'][] = $institution;
+	if (is_object($profileXml->institutions->institution)) {
+		foreach($profileXml->institutions->institution as $institution) {
+			$profile['institutions'][] = $institution;
+		}
 	}
-	foreach($profileXml->filters->filter as $filter) {
-		$profile['filters'][] = $filter;
+	if (is_object($profileXml->filters->filter)) {
+		foreach($profileXml->filters->filter as $filter) {
+			$profile['filters'][] = $filter;
+		}
 	}
 	$profiles[$name] = $profile;
 }
@@ -45,7 +49,14 @@ error_log('url: ' . $url, 4);
 $urlHelper = new UrlHelper($url);
 $profile = $profiles[$_GET['profile']];
 $institutions = $profile['institutions'];
-$urlHelper->addParameter('fq', "{!parent which='merged_boolean:true'} local_institution_facet_str_mv:(\"" . implode('" OR "', $profile['institutions']) . "\")");
+if (!empty($profile['institutions'])) {
+	$urlHelper->addParameter('fq', "{!parent which='merged_boolean:true'} local_institution_facet_str_mv:(\"" . implode('" OR "', $profile['institutions']) . "\")");
+}
+if (!empty($profile['filters'])) {
+	foreach ($profile['filters'] as $filter) {
+		$urlHelper->addParameter('fq', $filter);
+	}
+}
 $urlHelper->addParameter('fq', 'merged_boolean:true');
 $urlHelper->addParameter('fl', 'id,fullrecord,[child parentFilter=merged_boolean:true]');
 
