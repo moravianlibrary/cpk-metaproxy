@@ -26,4 +26,14 @@
 		</filters>
 	</profile>
 
+	<profile name="example">
+		<institutions>
+			<institution>2/Library/brno/MZK/</institution>
+		</institutions>
+		<filters>
+			<filter>cpk_detected_format_facet_str_mv:"0/BOOKS/"</filter>
+			<filter>NOT language:("Czech" OR "English")</filter>
+		</filters>
+	</profile>
+
 </profiles>
