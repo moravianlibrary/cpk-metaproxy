@@ -2,20 +2,27 @@
 
 	<url>http://frontie.cpk-infra.mzk.cz:8983</url>
 
-	<profile name="cpk1">
-		<institutions>
-			<institution>2/Library/brno/MZK/</institution>
-			<institution>2/Library/praha/NKP/</institution>
-		</institutions>
-		<filters>
-		</filters>
-	</profile>
+	<profile name="cpk"/>
 
-	<profile name="cpk2">
+	<profile name="nlk">
 		<institutions>
 			<institution>2/Library/praha/NLK/</institution>
 		</institutions>
+	</profile>
+
+	<profile name="mzk">
+		<institutions>
+			<institution>2/Library/brno/MZK/</institution>
+		</institutions>
+	</profile>
+
+	<profile name="mzk_czech_books">
+		<institutions>
+			<institution>2/Library/brno/MZK/</institution>
+		</institutions>
 		<filters>
+			<filter>cpk_detected_format_facet_str_mv:"0/BOOKS/"</filter>
+			<filter>language:"Czech"</filter>
 		</filters>
 	</profile>
 
