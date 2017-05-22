@@ -45,4 +45,10 @@
 		<target>aleph.nkp.cz:9991/NKC-UTF</target>
 	</profile>
 
+	<profile name="recursive" type="z39.50">
+		<target>lx2.loc.gov:210/LCDB</target>
+		<target>aleph.nkp.cz:9991/NKC-UTF</target>
+		<target>frontie.cpk-infra.mzk.cz:9000/cpk</target>
+	</profile>
+
 </profiles>
