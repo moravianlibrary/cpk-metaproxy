@@ -34,6 +34,8 @@
 
 			<xi:include href="databases.xml"/>
 
+			<filter type="multi"/>
+
 			<filter type="z3950_client">
 				<timeout>30</timeout>
 			</filter>

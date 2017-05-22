@@ -17,7 +17,9 @@
 					</xsl:if>
 					<database><xsl:value-of select="@name"/></database>
 					<xsl:if test="@type='z39.50'">
-						<target><xsl:value-of select="target"/></target>
+						<xsl:for-each select="target">
+							<target><xsl:value-of select="text()"/></target>
+						</xsl:for-each>
 					</xsl:if>
 				</virtual>
 

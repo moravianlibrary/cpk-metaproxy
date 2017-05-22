@@ -40,4 +40,9 @@
 		<target>lx2.loc.gov:210/LCDB</target>
 	</profile>
 
+	<profile name="all" type="z39.50">
+		<target>lx2.loc.gov:210/LCDB</target>
+		<target>aleph.nkp.cz:9991/NKC-UTF</target>
+	</profile>
+
 </profiles>
