@@ -2,9 +2,13 @@
 require __DIR__.'/vendor/autoload.php';
 
 $profilesXml = new SimpleXMLElement(file_get_contents('profiles.xml'));
-$solr = $profilesXml->url;
+$solr = $profilesXml->defaultSolrUrl;
 $profiles = array();
 foreach ($profilesXml->profile as $profileXml) {
+	$type = (string) $profileXml->attributes()->type;
+	if ($type !== 'solr') {
+		break;
+	}
 	$name = (string) $profileXml->attributes()->name;
 	$profile = array(
 		'institutions' => array(),

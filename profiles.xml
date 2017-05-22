@@ -1,22 +1,22 @@
 <profiles>
 
-	<url>http://frontie.cpk-infra.mzk.cz:6081/solr/index</url>
+	<defaultSolrUrl>http://frontie.cpk-infra.mzk.cz:6081/solr/index</defaultSolrUrl>
 
-	<profile name="cpk"/>
+	<profile name="cpk" type="solr"/>
 
-	<profile name="nlk">
+	<profile name="nlk" type="solr">
 		<institutions>
 			<institution>2/Library/praha/NLK/</institution>
 		</institutions>
 	</profile>
 
-	<profile name="mzk">
+	<profile name="mzk" type="solr">
 		<institutions>
 			<institution>2/Library/brno/MZK/</institution>
 		</institutions>
 	</profile>
 
-	<profile name="mzk_czech_books">
+	<profile name="mzk_czech_books" type="solr">
 		<institutions>
 			<institution>2/Library/brno/MZK/</institution>
 		</institutions>
@@ -26,7 +26,7 @@
 		</filters>
 	</profile>
 
-	<profile name="example">
+	<profile name="example" type="solr">
 		<institutions>
 			<institution>2/Library/brno/MZK/</institution>
 		</institutions>
@@ -34,6 +34,10 @@
 			<filter>cpk_detected_format_facet_str_mv:"0/BOOKS/"</filter>
 			<filter>NOT language:("Czech" OR "English")</filter>
 		</filters>
+	</profile>
+
+	<profile name="loc" type="z39.50">
+		<target>lx2.loc.gov:210/LCDB</target>
 	</profile>
 
 </profiles>

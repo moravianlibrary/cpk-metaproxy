@@ -11,8 +11,14 @@
 
 			<xsl:for-each select="profiles/profile">
 
-				<virtual route="cpk">
+				<virtual>
+					<xsl:if test="@type='solr'">
+						<xsl:attribute name="route">cpk</xsl:attribute>
+					</xsl:if>
 					<database><xsl:value-of select="@name"/></database>
+					<xsl:if test="@type='z39.50'">
+						<target><xsl:value-of select="target"/></target>
+					</xsl:if>
 				</virtual>
 
 			</xsl:for-each>

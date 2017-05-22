@@ -9,7 +9,7 @@
 
 		<records xmlns:e="http://explain.z3950.org/dtd/2.0/">
 
-			<xsl:for-each select="profiles/profile">
+			<xsl:for-each select="profiles/profile[@type='solr']">
 
 				<record>
 					<udb><xsl:value-of select="@name"/></udb>
