@@ -42,11 +42,13 @@ class UrlHelper {
 
 }
 
-$solr = 'http://frontie.cpk-infra.mzk.cz:8983';
 $request = $_SERVER["REQUEST_URI"];
-$url = $solr . $request;
-error_log('url: ' . $url, 4);
+$url = rtrim($solr, '/') . '/select';
+error_log('Base url: ' . $url, 4);
 $urlHelper = new UrlHelper($url);
+foreach ($_GET as $key => $value) {
+	$urlHelper->addParameter($key, $value);
+}
 $profile = $profiles[$_GET['profile']];
 $institutions = $profile['institutions'];
 if (!empty($profile['institutions'])) {
@@ -62,7 +64,7 @@ $urlHelper->addParameter('fl', 'id,fullrecord,[child parentFilter=merged_boolean
 
 $url = $urlHelper->getUrl();
 
-error_log($url, 4);
+error_log('Query url: ' . $url, 4);
 $response = file_get_contents($url);
 $xml = new SimpleXMLElement($response);
 foreach ($xml->result->doc as $document) {

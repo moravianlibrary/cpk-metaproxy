@@ -1,6 +1,6 @@
 <profiles>
 
-	<url>http://frontie.cpk-infra.mzk.cz:8983</url>
+	<url>http://frontie.cpk-infra.mzk.cz:6081/solr/index</url>
 
 	<profile name="cpk"/>
 

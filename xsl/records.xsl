@@ -13,7 +13,7 @@
 
 				<record>
 					<udb><xsl:value-of select="@name"/></udb>
-					<zurl>http://localhost:8000/solr/index?profile=<xsl:value-of select="@name"/></zurl>
+					<zurl>http://localhost:8000/?profile=<xsl:value-of select="@name"/></zurl>
 					<sru>solr</sru>
 					<e:databaseInfo>
 						<e:title lang="cz" primary="true">Centrální portál knihoven</e:title>
