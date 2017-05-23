@@ -32,6 +32,11 @@
 				<port>@:6081</port>
 			</filter>
 
+			<filter type="log">
+				<filename>/var/log/metaproxy/metaproxy.log</filename>
+				<category access="true"/>
+			</filter>
+
 			<xi:include href="databases.xml"/>
 
 			<filter type="multi"/>
