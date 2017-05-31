@@ -25,9 +25,9 @@
 
 	<xsl:template match="text()"/>
 
-        <xsl:template match="doc">
-                <xsl:apply-templates/>
-        </xsl:template>
+	<xsl:template match="doc">
+		<xsl:apply-templates/>
+	</xsl:template>
 
 	<xsl:template match="str[@name='fullrecord']">
 		<xsl:call-template name="replace-string">
