@@ -5,14 +5,14 @@
 
 	<xsl:template match="text()"/>
 
-        <xsl:template match="marc:collection">
-                <xsl:apply-templates/>
-        </xsl:template>
+	<xsl:template match="marc:collection">
+		<xsl:apply-templates/>
+	</xsl:template>
 
 	<xsl:template match="marc:record">
 		<marc:record>
 			<xsl:copy-of select="*"/>
 		</marc:record>
-        </xsl:template>
+	</xsl:template>
 
 </xsl:stylesheet>

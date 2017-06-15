@@ -72,7 +72,7 @@ error_log('Query url: ' . $url, 4);
 $response = file_get_contents($url);
 $xml = new SimpleXMLElement($response);
 foreach ($xml->result->doc as $document) {
-	$fullrecord = &$document->xpath("//str[@name='fullrecord']");
+	$fullrecord = &$document->xpath(".//str[@name='fullrecord']");
 	$candidate = null;
 	$candidateOrder = PHP_INT_MAX;
 	foreach ($document->doc as $nested) {
@@ -93,7 +93,9 @@ foreach ($xml->result->doc as $document) {
 	);
 	$marc = new \File_MARC($marc, \File_MARC::SOURCE_STRING);
 	$fullrecord[0][0]=$marc->next()->toXML();
-	unset($document->doc);
+	foreach ($document->doc as $doc) {
+		unset($document->doc);
+	}
 }
 $reply = $xml->asXML();
 header('Content-Type: application/xml; charset=UTF-8');
