@@ -28,11 +28,11 @@
                 <target>lx2.loc.gov:210/LCDB</target>
 		<target>opac.nebis.ch:9909/NEBIS_UTF</target>
 		<target>z3950.nb.no:2100/Norbok</target>
-		<taget>z3950cat.bl.uk:9909/ZBLACU</target>
+		<target>z3950cat.bl.uk:9909/ZBLACU</target>
 		<target>sru.gbv.de:210/gvk</target>
 		<target>library.ox.ac.uk:210/ALEPH</target>
 		<target>eu01.alma.exlibrisgroup.com:210/47BIBSYS_NETWORK</target>
-		<taget>aleph.unibas.ch:9909/IDS_ANSEL</target>
+		<target>aleph.unibas.ch:9909/IDS_ANSEL</target>
 		<target>z3950.snk.sk:1111/clas02</target>
         </profile>
 
