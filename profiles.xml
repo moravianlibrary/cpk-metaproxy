@@ -24,8 +24,8 @@
 		</filters>
 	</profile>
 
-        <profile name="cpk_zahr" type="z39.50">
-                <target>lx2.loc.gov:210/LCDB</target>
+	<profile name="cpk_zahr" type="z39.50">
+		<target>lx2.loc.gov:210/LCDB</target>
 		<target>opac.nebis.ch:9909/NEBIS_UTF</target>
 		<target>z3950.nb.no:2100/Norbok</target>
 		<target>sru.gbv.de:210/gvk</target>
@@ -33,15 +33,15 @@
 		<target>eu01.alma.exlibrisgroup.com:210/47BIBSYS_NETWORK</target>
 		<target>aleph.unibas.ch:9909/IDS_ANSEL</target>
 		<target>z3950.snk.sk:1111/clas02</target>
-        </profile>
+	</profile>
 
-        <profile name="cpk_univ" type="z39.50">
+	<profile name="cpk_univ" type="z39.50">
 		<target>hugo.uk.zcu.cz:9991/ZUP01</target>
 		<target>aleph.muni.cz:9991/MUB01Z</target>
 		<target>cougar.lib.vutbr.cz:9991/BUT01_PRIMO</target>
 		<target>katalog.k.utb.cz:9991/UTB01_WEB</target>
 		<target>library.upol.cz:8889/upol_us_cat</target>
-        </profile>
+	</profile>
 
 	<profile name="loc" type="z39.50">
 		<target>lx2.loc.gov:210/LCDB</target>
