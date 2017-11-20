@@ -43,6 +43,18 @@
 		<target>library.upol.cz:8889/upol_us_cat</target>
 	</profile>
 
+	<profile name="knav_1" type="z39.50">
+		<target>lx2.loc.gov:210/LCDB</target>
+		<target>aleph.nkp.cz:9991/SKC-UTF</target>
+		<target>katalog.kjm.cz:9909/kjm_u</target>
+		<target>aleph.muni.cz:9991/MUB01Z</target>
+		<target>library.vse.cz:2100/default</target>
+		<target>hugo.uk.zcu.cz:9991/ZUP01</target>
+		<target>aleph.osu.cz:9991/OSU01</target>
+		<target>svk7.svkkl.cz:8887/kl_us_cat</target>
+		<target>web2.uk.tul.cz:9991/monografie</target>
+	</profile>
+
 	<profile name="loc" type="z39.50">
 		<target>lx2.loc.gov:210/LCDB</target>
 	</profile>
