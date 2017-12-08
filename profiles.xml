@@ -55,6 +55,17 @@
 		<target>web2.uk.tul.cz:9991/monografie</target>
 	</profile>
 
+	<profile name="uk_1" type="z39.50">
+		<target>katalog.kjm.cz:9909/kjm_u</target>
+		<target>aleph.svkpl.cz:9991/PNAAL</target>
+		<target>aleph.muni.cz:9991/MUB01Z</target>
+		<target>library.vse.cz:2100/default</target>
+		<target>eu01.alma.exlibrisgroup.com:210/47BIBSYS_NETWORK</target>
+		<target>opac.nebis.ch:9909/NEBIS_UTF</target>
+		<target>library.ox.ac.uk:210/ALEPH</target>
+		<target>lx2.loc.gov:210/LCDB</target>
+	</profile>
+
 	<profile name="loc" type="z39.50">
 		<target>lx2.loc.gov:210/LCDB</target>
 	</profile>
