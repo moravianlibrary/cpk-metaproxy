@@ -66,6 +66,17 @@
 		<target>lx2.loc.gov:210/LCDB</target>
 	</profile>
 
+	<profile name="svkhk_1" type="z39.50">
+		<target>aleph.mzk.cz:9991/MZK03-UTF</target>
+		<target>aleph.nkp.cz:9991/stt-utf</target>
+	</profile>
+
+	<profile name="svkhk_2" type="z39.50">
+		<target>aleph.nkp.cz:9991/ANL-UTF</target>
+		<target>aleph.muni.cz:9991/MUB02Z</target>
+		<target>aleph.vkol.cz:9991/SVK01_CLAN</target>
+	</profile>
+
 	<profile name="loc" type="z39.50">
 		<target>lx2.loc.gov:210/LCDB</target>
 	</profile>
