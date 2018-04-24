@@ -77,6 +77,22 @@
 		<target>aleph.vkol.cz:9991/SVK01_CLAN</target>
 	</profile>
 
+	<profile name="tre_1" type="solr">
+		<filters>
+			<filter>NOT institution:2/Library/ceskatrebova/TRE/</filter>
+		</filters>
+	</profile>
+
+	<profile name="tre_2" type="z39.50">
+		<target>frontie.cpk-infra.mzk.cz:9000/tre_1</target>
+		<target>aleph.muni.cz:9991/MUB01Z</target>
+		<target>aleph.svkpl.cz:9991/PNAAL</target>
+		<target>library.vse.cz:2100/default</target>
+		<target>cougar.lib.vutbr.cz:9991/BUT01_PRIMO</target>
+		<target>aleph.osu.cz:9991/OSU01</target>
+		<target>web2.uk.tul.cz:9991/monografie</target>
+	</profile>
+
 	<profile name="loc" type="z39.50">
 		<target>lx2.loc.gov:210/LCDB</target>
 	</profile>
