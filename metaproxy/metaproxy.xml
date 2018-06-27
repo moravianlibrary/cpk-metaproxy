@@ -37,11 +37,9 @@
 				<category access="true"/>
 			</filter>
 
-			<xi:include href="databases.xml"/>
+			<xi:include href="databases.xml" />
 
-			<filter type="multi">
-				<hideunavailable/>
-			</filter>
+			<xi:include href="multi.xml" />
 
 			<filter type="z3950_client">
 				<timeout>30</timeout>
