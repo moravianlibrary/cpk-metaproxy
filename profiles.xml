@@ -2,10 +2,11 @@
 
 	<defaultSolrUrl>http://frontie.cpk-infra.mzk.cz:6081/solr/index</defaultSolrUrl>
 
-	<profile name="cpk" type="solr"/>
+	<profile name="cpk" type="solr">
 		<filters>
 			<filter>metaproxy_boolean:true</filter>
 		</filters>
+	</profile>
 
 	<profile name="cpk_mzk_01" type="solr">
 		<filters>
