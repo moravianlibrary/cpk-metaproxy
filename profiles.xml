@@ -3,14 +3,16 @@
 	<defaultSolrUrl>http://frontie.cpk-infra.mzk.cz:6081/solr/index</defaultSolrUrl>
 
 	<profile name="cpk" type="solr">
-		<filters>
+		<mergedFilters>
 			<filter>metaproxy_boolean:true</filter>
-		</filters>
+		</mergedFilters>
 	</profile>
 
 	<profile name="cpk_mzk_01" type="solr">
-		<filters>
+		<mergedFilters>
 			<filter>metaproxy_boolean:true</filter>
+		</mergedFilters>
+		<filters>
 			<filter>NOT institution:2/Library/brno/MZK/</filter>
 		</filters>
 	</profile>

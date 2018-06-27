@@ -19,6 +19,11 @@ foreach ($profilesXml->profile as $profileXml) {
 			$profile['institutions'][] = $institution;
 		}
 	}
+	if (is_object($profileXml->mergedFilters->filter)) {
+		foreach($profileXml->mergedFilters->filter as $filter) {
+			$profile['mergedFilters'][] = $filter;
+		}
+	}
 	if (is_object($profileXml->filters->filter)) {
 		foreach($profileXml->filters->filter as $filter) {
 			$profile['filters'][] = $filter;
@@ -57,6 +62,11 @@ $profile = $profiles[$_GET['profile']];
 $institutions = $profile['institutions'];
 if (!empty($profile['institutions'])) {
 	$urlHelper->addParameter('fq', "{!parent which='merged_boolean:true'} local_institution_facet_str_mv:(\"" . implode('" OR "', $profile['institutions']) . "\")");
+}
+if (!empty($profile['mergedFilters'])) {
+	foreach ($profile['mergedFilters'] as $filter) {
+		$urlHelper->addParameter('fq', "{!parent which='merged_boolean:true'} " . $filter);
+	}
 }
 if (!empty($profile['filters'])) {
 	foreach ($profile['filters'] as $filter) {
