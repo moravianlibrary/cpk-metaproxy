@@ -17,6 +17,9 @@
 								<xsl:attribute name="auth">
 									<xsl:value-of select="@auth" />
 								</xsl:attribute>
+								<xsl:if test="../@type='z39.50' and ../@format='unimarc'">
+									<xsl:attribute name="route">unimarc</xsl:attribute>
+								</xsl:if>
 								<xsl:value-of select="text()"/>
 							</target>
 						</xsl:if>

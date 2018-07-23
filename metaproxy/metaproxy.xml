@@ -41,6 +41,10 @@
 
 			<xi:include href="multi.xml" />
 
+			<!--
+			<filter type="multi"/>
+			-->
+
 			<filter type="z3950_client">
 				<timeout>30</timeout>
 			</filter>
@@ -50,6 +54,7 @@
 		</route>
 
 		<xi:include href="cpk/cpk-route.xml"/>
+		<xi:include href="unimarc/unimarc-route.xml"/>
 
 	</routes>
 

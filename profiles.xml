@@ -111,8 +111,9 @@
 		<target>frontie.cpk-infra.mzk.cz:9000/cpk</target>
 	</profile>
 
-	<profile name="test" type="z39.50">
+	<profile name="test" type="z39.50" format="unimarc">
 		<target auth="Z3950/Z3950_BNF">z3950.bnf.fr:2211/TOUT</target>
+		<target>lx2.loc.gov:210/LCDB</target>
 	</profile>
 
 </profiles>

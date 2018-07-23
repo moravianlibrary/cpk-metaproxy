@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<route xmlns="http://indexdata.com/metaproxy" id="unimarc">
+
+	<filter type="record_transform">
+		<retrievalinfo>
+			<retrieval syntax="unimarc" name="unimarc"/>
+			<retrieval name="F" syntax="xml">
+				<backend name="F" syntax="unimarc">
+					<marc inputcharset="utf-8" inputformat="marc" outputcharset="utf-8" outputformat="marcxml" />
+					<xslt stylesheet="unimarc/UNIMARC2MARC21.xsl" />
+				</backend>
+			</retrieval>
+			<retrieval name="F" syntax="USmarc">
+				<backend name="F" syntax="unimarc">
+					<marc inputcharset="utf-8" inputformat="marc" outputcharset="utf-8" outputformat="marcxml" />
+					<xslt stylesheet="unimarc/UNIMARC2MARC21.xsl" />
+					<marc inputcharset="utf-8" inputformat="xml" outputcharset="marc-8" outputformat="marc"/>
+				</backend>
+			</retrieval>
+		</retrievalinfo>
+	</filter>
+
+	<filter type="multi"/>
+
+	<filter type="z3950_client">
+		<timeout>30</timeout>
+	</filter>
+
+	<filter type="bounce"/>
+
+</route>
