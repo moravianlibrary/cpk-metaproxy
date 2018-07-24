@@ -14,7 +14,7 @@
 				<backend name="F" syntax="unimarc">
 					<marc inputcharset="utf-8" inputformat="marc" outputcharset="utf-8" outputformat="marcxml" />
 					<xslt stylesheet="unimarc/UNIMARC2MARC21.xsl" />
-					<marc inputcharset="utf-8" inputformat="xml" outputcharset="marc-8" outputformat="marc"/>
+					<marc inputcharset="utf-8" inputformat="xml" outputcharset="utf-8" outputformat="marc"/>
 				</backend>
 			</retrieval>
 		</retrievalinfo>
