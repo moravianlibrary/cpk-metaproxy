@@ -116,4 +116,10 @@
 		<target>lx2.loc.gov:210/LCDB</target>
 	</profile>
 
+	<profile name="npu_1" type="z39.50">
+		<target auth="CHUNPR2210/RD-7JTSx">z3950cat.bl.uk:9909/ZBLACU</target>
+		<target>lx2.loc.gov:210/LCDB</target>
+		<target>z3950.gbv.de/gvk</target>
+	</profile>
+
 </profiles>
