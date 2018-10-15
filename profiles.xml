@@ -122,4 +122,10 @@
 		<target>z3950.gbv.de/gvk</target>
 	</profile>
 
+	<profile name="lanius_1" type="z39.50">
+		<target auth="CHUNPR2210/RD-7JTSx">z3950cat.bl.uk:9909/ZBLACU</target>
+		<target>lx2.loc.gov:210/LCDB</target>
+		<target>library.ox.ac.uk:210/ALEPH</target>
+	</profile>
+
 </profiles>
