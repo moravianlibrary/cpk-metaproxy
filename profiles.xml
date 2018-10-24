@@ -28,22 +28,30 @@
 	</profile>
 
 	<profile name="cpk_zahr" type="z39.50">
-		<target>lx2.loc.gov:210/LCDB</target>
-		<target>opac.nebis.ch:9909/NEBIS_UTF</target>
+		<target>lx2.loc.gov:210/LCDB</target> <!--Library of Congress-->
+		<target>opac.nebis.ch:9909/NEBIS_UTF</target> <!--Der Bibliotheksverbund Nebis (Švýcarsko)-->
 		<target>z3950.nb.no:2100/Norbok</target>
-		<target>sru.gbv.de:210/gvk</target>
 		<target>library.ox.ac.uk:210/ALEPH</target>
 		<target>eu01.alma.exlibrisgroup.com:210/47BIBSYS_NETWORK</target>
 		<target>aleph.unibas.ch:9909/IDS_ANSEL</target>
 		<target>z3950.snk.sk:1111/clas02</target>
+		<target>alpha.bn.org.pl:210/INNOPAC</target>
+		<target>z3950.libris.kb.se:210/LIBR</target>
+		<target auth="Z3950/Z3950_BNF">z3950.bnf.fr:2211/TOUT</target>
+		<target>z3950.gbv.de/gvk</target>
+		<target auth="CHUNPR2210/RD-7JTSx">z3950cat.bl.uk:9909/ZBLACU</target>
 	</profile>
 
 	<profile name="cpk_univ" type="z39.50">
-		<target>hugo.uk.zcu.cz:9991/ZUP01</target>
-		<target>aleph.muni.cz:9991/MUB01Z</target>
-		<target>cougar.lib.vutbr.cz:9991/BUT01_PRIMO</target>
-		<target>katalog.k.utb.cz:9991/UTB01_WEB</target>
-		<target>library.upol.cz:8889/upol_us_cat</target>
+		<target>hugo.uk.zcu.cz:9991/ZUP01</target> <!--Západočeská univerzita-->
+		<target>aleph.muni.cz:9991/MUB01Z</target> <!--Masarykova univerzita-->
+		<target>cougar.lib.vutbr.cz:9991/BUT01_PRIMO</target> <!--Vysoké učební technické Brno-->
+		<target>katalog.k.utb.cz:9991/UTB01_WEB</target> <!--Univerzita Tomáše Bati ve Zlíně-->
+		<target>library.upol.cz:8889/upol_us_cat</target> <!--Univezita Palackého v Olomouci-->
+		<target>library.vse.cz:2100/default</target> <!--Vysoká škola ekonomická Praha-->
+		<target>aleph.osu.cz:9991/OSU01</target> <!--Ostravská univezita-->
+		<target>agama.ruk.cuni.cz:9992/CKS</target> <!--Univerzita Karlova-->
+		<target>aleph.ntkcz.cz:9991/SKT01</target> <!--Národní technická knihovna-->
 	</profile>
 
 	<profile name="knav_1" type="z39.50">
@@ -126,6 +134,53 @@
 		<target auth="CHUNPR2210/RD-7JTSx">z3950cat.bl.uk:9909/ZBLACU</target>
 		<target>lx2.loc.gov:210/LCDB</target>
 		<target>library.ox.ac.uk:210/ALEPH</target>
+	</profile>
+
+	<profile name="cpk_ang" type="z39.50">
+		<target auth="CHUNPR2210/RD-7JTSx">z3950cat.bl.uk:9909/ZBLACU</target> <!--British Library-->
+		<target>lx2.loc.gov:210/LCDB</target> <!--Library of Congress-->
+		<target>library.ox.ac.uk:210/ALEPH</target> <!--Library of Oxford-->
+		<target auth="knihovnycz/knihovnycz1">amicus.collectionscanada.gc.ca:210/any
+		</target> <!--Národní knihovna Kanady-->
+	</profile>
+
+	<profile name="cpk_nem" type="z39.50">
+		<target>z3950.gbv.de/gvk</target> <!--Der Gemeinsame Bibliotheksverbund (GBV) -->
+		<target>opac.nebis.ch:9909/NEBIS_UTF</target> <!--Zentralbibliothek Zürich-->
+		<target>aleph.unibas.ch:9909/IDS_ANSEL</target> <!--Universität Basel-->
+		<target>z3950.obvsg.at:9991/acc01</target> <!--Národní knihovna Rakouska-->
+	</profile>
+
+	<profile name="cpk_slov" type="z39.50">
+		<target>z3950.snk.sk:1111/clas01</target> <!--KIS3G-->
+		<target>z3950.snk.sk:1111/clas02</target> <!--KIS3G-->
+	</profile>
+
+	<profile name="cpk_ces" type="z39.50">
+		<target>aleph.nkp.cz:9991/NKC-UTF</target>
+		<target>aleph.mzk.cz:9991/MZK01-UTF</target>
+		<target>aleph.vkol.cz:9991/SVK01</target>
+		<target>ipac.kvkli.cz:8887/li_us_cat</target>
+		<target>svk7.svkkl.cz:8887/kl_us_cat</target>
+		<target>aleph.osu.cz:9991/OSU01</target>
+		<target>131.117.208.130:210/katalog</target>
+		<target>aleph.lib.cas.cz:9991/AV</target>
+		<target>aleph2.svkhk.cz:9991/KATALOG</target>
+		<target>arl.cbvk.cz:8888/cbvk_us_cat</target>
+	</profile>
+
+	<profile name="cpk_anal" type="z39.50">
+		<target>aleph.nkp.cz:9991/ANL-UTF</target>
+		<target>aleph.muni.cz:9991/MUB02Z</target>
+		<target>z39an.skat.cz:9999/clanky</target>
+		<target>aleph.svkpl.cz:9991/PNAAL</target>
+		<target>aleph.vkol.cz:9991/SVK01_CLAN</target>
+	</profile>
+
+	<profile name="cpk_stare" type="z39.50">
+		<target>aleph.nkp.cz:9991/stt-utf</target> <!--Národní knihovna báze STT-->
+		<target>aleph.mzk.cz:9991/MZK03-UTF</target> <!--Historické fondy MZK-->
+		<target>aleph.vkol.cz:9991/SVK01_STT</target> <!--Historické fondy Vědecké knihovny v Olomouci-->
 	</profile>
 
 </profiles>
