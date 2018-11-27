@@ -185,4 +185,8 @@
 		<target>aleph.nkp.cz:9991/SKC-UTF</target> <!--Souborný katalog ČR-->
 	</profile>
 
+	<profile name="fanm_01" type="z39.50">
+		<target>mines.jcu.cz:9991/JCU01</target>
+	</profile>
+
 </profiles>
