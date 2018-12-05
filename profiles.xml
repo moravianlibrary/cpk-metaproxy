@@ -151,6 +151,13 @@
 		<target>z3950.obvsg.at:9991/acc01</target> <!--Národní knihovna Rakouska-->
 	</profile>
 
+	<profile name="cpk_ger" type="z39.50">
+		<target>z3950.gbv.de/gvk</target> <!--Der Gemeinsame Bibliotheksverbund (GBV) -->
+		<target>opac.nebis.ch:9909/NEBIS_UTF</target> <!--Zentralbibliothek Zürich-->
+		<target>aleph.unibas.ch:9909/IDS_ANSEL</target> <!--Universität Basel-->
+		<target>z3950.obvsg.at:9991/acc01</target> <!--Národní knihovna Rakouska-->
+	</profile>
+
 	<profile name="cpk_slov" type="z39.50">
 		<target>z3950.snk.sk:1111/clas01</target> <!--KIS3G-->
 		<target>z3950.snk.sk:1111/clas02</target> <!--KIS3G-->
