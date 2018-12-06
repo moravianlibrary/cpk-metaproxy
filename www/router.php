@@ -102,7 +102,9 @@ foreach ($xml->result->doc as $document) {
 		['#29;', '#30;', '#31;'], ["\x1D", "\x1E", "\x1F"], $marc
 	);
 	$marc = new \File_MARC($marc, \File_MARC::SOURCE_STRING);
-	$fullrecord[0][0]=$marc->next()->toXML();
+	$marc = $marc->next();
+	$marc->deleteFields('996');
+	$fullrecord[0][0]=$marc->toXML();
 	foreach ($document->doc as $doc) {
 		unset($document->doc);
 	}
