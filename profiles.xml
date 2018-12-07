@@ -35,9 +35,9 @@
 		<target>eu01.alma.exlibrisgroup.com:210/47BIBSYS_NETWORK</target> <!--BIBSYS-->
 		<target>aleph.unibas.ch:9909/IDS_ANSEL</target> <!--Universität Basel-->
 		<target>z3950.snk.sk:1111/clas01</target> <!--KIS3G-->
-		<target>alpha.bn.org.pl:210/INNOPAC</target> <!--Polská národní knihovna-->
+		<!--<target>alpha.bn.org.pl:210/INNOPAC</target> Polská národní knihovna-->
 		<target>z3950.libris.kb.se:210/LIBR</target> <!--Královská knihovna ve Stockholmu-->
-		<target auth="Z3950/Z3950_BNF">z3950.bnf.fr:2211/TOUT</target> <!--Francouzská národní knihovna-->
+		<!--<target auth="Z3950/Z3950_BNF">z3950.bnf.fr:2211/TOUT</target> Francouzská národní knihovna-->
 		<target>z3950.gbv.de/gvk</target> <!--Der Gemeinsame Bibliotheksverbund (GBV) -->
 		<target auth="CHUNPR2210/RD-7JTSx">z3950cat.bl.uk:9909/ZBLACU</target> <!--British Library-->
 	</profile>
@@ -51,7 +51,7 @@
 		<target>library.vse.cz:2100/default</target> <!--Vysoká škola ekonomická Praha-->
 		<target>aleph.osu.cz:9991/OSU01</target> <!--Ostravská univezita-->
 		<target>agama.ruk.cuni.cz:9992/CKS</target> <!--Univerzita Karlova-->
-		<target>aleph.ntkcz.cz:9991/SKT01</target> <!--Národní technická knihovna-->
+		<!--<target>aleph.ntkcz.cz:9991/SKT01</target> Národní technická knihovna-->
 	</profile>
 
 	<profile name="knav_1" type="z39.50">
@@ -140,8 +140,8 @@
 		<target auth="CHUNPR2210/RD-7JTSx">z3950cat.bl.uk:9909/ZBLACU</target> <!--British Library-->
 		<target>lx2.loc.gov:210/LCDB</target> <!--Library of Congress-->
 		<target>library.ox.ac.uk:210/ALEPH</target> <!--Library of Oxford-->
-		<target auth="knihovnycz/knihovnycz1">amicus.collectionscanada.gc.ca:210/any
-		</target> <!--Národní knihovna Kanady-->
+		<!--<target auth="knihovnycz/knihovnycz1">amicus.collectionscanada.gc.ca:210/any
+		</target> Národní knihovna Kanady-->
 	</profile>
 
 	<profile name="cpk_nem" type="z39.50">
