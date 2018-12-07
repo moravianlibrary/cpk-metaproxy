@@ -196,4 +196,56 @@
 		<target>mines.jcu.cz:9991/JCU01</target>
 	</profile>
 
+	<profile name="svkkl_01" type="z39.50">
+		<target>aleph.nkp.cz:9991/NKC-UTF</target> <!--Národní knihovna ČR-->
+		<target>aleph.mzk.cz:9991/MZK01-UTF</target> <!--Moravská zemská knihovna v Brně-->
+		<target>aleph.vkol.cz:9991/SVK01</target> <!--Vědecká knihovna Olomouc-->
+		<target>katalog.svkos.cz:9991/katalog</target> <!--Moravskoslezská vědecká knihovna v Ostravě-->
+		<target>arl.cbvk.cz:8888/cbvk_us_cat</target> <!--Jihočeská vědecká knihovna v Českých Budějovicích-->
+		<target>aleph.nkp.cz:9991/SKC-UTF</target> <!--Souborný katalog ČR-->
+	</profile>
+
+	<profile name="cnb_01" type="z39.50">
+		<target>aleph.nkp.cz:9991/SKC-UTF</target> <!--Souborný katalog ČR-->
+	</profile>
+
+	<profile name="cnb_02" type="z39.50">
+		<target>aleph.nkp.cz:9991/NKC-UTF</target> <!--Národní knihovna ČR-->
+		<target>aleph.mzk.cz:9991/MZK01-UTF</target> <!--Moravská zemská knihovna v Brně-->
+		<target>aleph.nkp.cz:9991/SKC-UTF</target> <!--Souborný katalog ČR-->
+	</profile>
+
+	<profile name="cnb_03" type="z39.50">
+		<target>195.113.12.38:2220/TITLES
+		</target> <!--Katalog knihovny Centrum pro ekonomický výzkum a doktorské studium-->
+		<target>library.vse.cz:2100/default</target> <!--Vysoká škola ekonomická Praha-->
+		<target>katalog.iir.cz:9991/UMV</target> <!--Ústav mezinárodních vztahů monografie-->
+	</profile>
+
+	<profile name="cnb_04" type="z39.50">
+		<target>lx2.loc.gov:210/LCDB</target> <!--Library of Congress-->
+	</profile>
+
+	<profile name="cnb_05" type="z39.50">
+		<target>z3950.copac.ac.uk:210/COPAC</target> <!--COPAC CNL03976-->
+		<target auth="CHUNPR2210/RD-7JTSx">z3950cat.bl.uk:9909/ZBLACU</target> <!--British Library-->
+		<target auth="knihovnycz/knihovnycz1">amicus.collectionscanada.gc.ca:210/any
+		</target> <!--Národní knihovna Kanady-->
+		<target>library.ox.ac.uk:210/ALEPH</target> <!--Library of Oxford-->
+	</profile>
+
+	<profile name="cnb_06" type="z39.50">
+		<target>jolis.worldbankimflib.org:2200/unicorn</target> <!--World Bank-->
+		<target>z3950.gbv.de/gvk</target> <!--Der Gemeinsame Bibliotheksverbund (GBV) -->
+		<target>opac.nebis.ch:9909/NEBIS_UTF</target> <!--Zentralbibliothek Zürich-->
+	</profile>
+
+	<profile name="cnb_07" type="z39.50">
+		<target>aleph.nkp.cz:9991/SKCP-JIB</target> <!--souborný katalog seriály-->
+	</profile>
+
+	<profile name="cnb_08" type="z39.50">
+		<target>aleph.nkp.cz:9991/CNBP-UTF</target> <!--čnb periodika-->
+	</profile>
+
 </profiles>
