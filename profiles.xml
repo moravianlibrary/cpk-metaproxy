@@ -30,7 +30,7 @@
 	<profile name="cpk_zahr" type="z39.50">
 		<target>lx2.loc.gov:210/LCDB</target> <!--Library of Congress-->
 		<target>opac.nebis.ch:9909/NEBIS_UTF</target> <!--Der Bibliotheksverbund Nebis (Švýcarsko)-->
-		<target>z3950.nb.no:2100/Norbok</target> <!--Norská královská knihovna-->
+		<!--<target>z3950.nb.no:2100/Norbok</target> Norská královská knihovna-->
 		<target>library.ox.ac.uk:210/ALEPH</target> <!--Library of Oxford-->
 		<target>eu01.alma.exlibrisgroup.com:210/47BIBSYS_NETWORK</target> <!--BIBSYS-->
 		<target>aleph.unibas.ch:9909/IDS_ANSEL</target> <!--Universität Basel-->
@@ -45,7 +45,7 @@
 	<profile name="cpk_univ" type="z39.50">
 		<target>hugo.uk.zcu.cz:9991/ZUP01</target> <!--Západočeská univerzita-->
 		<target>aleph.muni.cz:9991/MUB01Z</target> <!--Masarykova univerzita-->
-		<target>cougar.lib.vutbr.cz:9991/BUT01_PRIMO</target> <!--Vysoké učební technické Brno-->
+		<!--<target>cougar.lib.vutbr.cz:9991/BUT01_PRIMO</target> Vysoké učební technické Brno-->
 		<target>katalog.k.utb.cz:9991/UTB01_WEB</target> <!--Univerzita Tomáše Bati ve Zlíně-->
 		<target>library.upol.cz:8889/upol_us_cat</target> <!--Univezita Palackého v Olomouci-->
 		<target>library.vse.cz:2100/default</target> <!--Vysoká škola ekonomická Praha-->
@@ -57,7 +57,7 @@
 	<profile name="knav_1" type="z39.50">
 		<target>lx2.loc.gov:210/LCDB</target>
 		<target>aleph.nkp.cz:9991/SKC-UTF</target>
-		<target>katalog.kjm.cz:9909/kjm_u</target>
+		<!--<target>katalog.kjm.cz:9909/kjm_u</target>-->
 		<target>aleph.muni.cz:9991/MUB01Z</target>
 		<target>library.vse.cz:2100/default</target>
 		<target>hugo.uk.zcu.cz:9991/ZUP01</target>
@@ -85,7 +85,7 @@
 	<profile name="svkhk_2" type="z39.50">
 		<target>aleph.nkp.cz:9991/ANL-UTF</target>
 		<target>aleph.muni.cz:9991/MUB02Z</target>
-		<target>aleph.vkol.cz:9991/SVK01_CLAN</target>
+		<!--<target>aleph.vkol.cz:9991/SVK01_CLAN</target>-->
 	</profile>
 
 	<profile name="tre_1" type="solr">
@@ -99,7 +99,7 @@
 		<target>aleph.muni.cz:9991/MUB01Z</target>
 		<target>aleph.svkpl.cz:9991/PNAAL</target>
 		<target>library.vse.cz:2100/default</target>
-		<target>cougar.lib.vutbr.cz:9991/BUT01_PRIMO</target>
+		<!--<target>cougar.lib.vutbr.cz:9991/BUT01_PRIMO</target>-->
 		<target>aleph.osu.cz:9991/OSU01</target>
 		<target>web2.uk.tul.cz:9991/monografie</target>
 	</profile>
@@ -171,7 +171,7 @@
 		<target>svk7.svkkl.cz:8887/kl_us_cat</target> <!--Středočeská vědecká knihovna v Kladně-->
 		<target>aleph.osu.cz:9991/OSU01</target> <!--Ostravská univerzita-->
 		<target>aleph.lib.cas.cz:9991/AV</target> <!--Souborný katalog Akademie věd</target>-->
-		<target>aleph2.svkhk.cz:9991/KATALOG</target> <!--Studijní a vědecká knihovna v Hradci Králové-->
+		<target>aleph.svkhk.cz:9991/KATALOG</target> <!--Studijní a vědecká knihovna v Hradci Králové-->
 		<target>arl.cbvk.cz:8888/cbvk_us_cat</target> <!--Jihočeská vědecká knihovna v Českých Budějovicích-->
 	</profile>
 
@@ -193,7 +193,7 @@
 	</profile>
 
 	<profile name="fanm_01" type="z39.50">
-		<target>mines.jcu.cz:9991/JCU01</target>
+		<target>minas.jcu.cz:9991/JCU01</target>
 	</profile>
 
 	<profile name="svkkl_01" type="z39.50">
@@ -216,8 +216,8 @@
 	</profile>
 
 	<profile name="cnb_03" type="z39.50">
-		<target>195.113.12.38:2220/TITLES
-		</target> <!--Katalog knihovny Centrum pro ekonomický výzkum a doktorské studium-->
+		<!--<target>195.113.12.38:2220/TITLES
+		</target>Katalog knihovny Centrum pro ekonomický výzkum a doktorské studium-->
 		<target>library.vse.cz:2100/default</target> <!--Vysoká škola ekonomická Praha-->
 		<target>katalog.iir.cz:9991/UMV</target> <!--Ústav mezinárodních vztahů monografie-->
 	</profile>
