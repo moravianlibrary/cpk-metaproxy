@@ -37,7 +37,7 @@
 		<target>z3950.snk.sk:1111/clas01</target> <!--KIS3G-->
 		<!--<target>alpha.bn.org.pl:210/INNOPAC</target> Polská národní knihovna-->
 		<target>z3950.libris.kb.se:210/LIBR</target> <!--Královská knihovna ve Stockholmu-->
-		<!--<target auth="Z3950/Z3950_BNF">z3950.bnf.fr:2211/TOUT</target> Francouzská národní knihovna-->
+		<target>www.knihovny.cz:9000/bnf</target> <!--Francouzská národní knihovna-->
 		<target>z3950.gbv.de/gvk</target> <!--Der Gemeinsame Bibliotheksverbund (GBV) -->
 		<target auth="CHUNPR2210/RD-7JTSx">z3950cat.bl.uk:9909/ZBLACU</target> <!--British Library-->
 	</profile>
@@ -50,7 +50,7 @@
 		<target>library.upol.cz:8889/upol_us_cat</target> <!--Univezita Palackého v Olomouci-->
 		<target>library.vse.cz:2100/default</target> <!--Vysoká škola ekonomická Praha-->
 		<target>aleph.osu.cz:9991/OSU01</target> <!--Ostravská univezita-->
-		<target>agama.ruk.cuni.cz:9992/CKS</target> <!--Univerzita Karlova-->
+		<target>agama.ruk.cuni.cz:9992/CKSU</target> <!--Univerzita Karlova-->
 		<!--<target>aleph.ntkcz.cz:9991/SKT01</target> Národní technická knihovna-->
 	</profile>
 
@@ -121,8 +121,11 @@
 
 	<profile name="test" type="z39.50" format="unimarc">
 		<target auth="Z3950/Z3950_BNF">z3950.bnf.fr:2211/TOUT</target>
-		<target>lx2.loc.gov:210/LCDB</target>
 	</profile>
+
+        <profile name="bnf" type="z39.50" format="unimarc">
+                <target auth="Z3950/Z3950_BNF">z3950.bnf.fr:2211/TOUT</target>
+        </profile>
 
 	<profile name="npu_1" type="z39.50">
 		<target auth="CHUNPR2210/RD-7JTSx">z3950cat.bl.uk:9909/ZBLACU</target>
@@ -147,14 +150,14 @@
 		<target>z3950.gbv.de/gvk</target> <!--Der Gemeinsame Bibliotheksverbund (GBV) -->
 		<target>opac.nebis.ch:9909/NEBIS_UTF</target> <!--Zentralbibliothek Zürich-->
 		<target>aleph.unibas.ch:9909/IDS_ANSEL</target> <!--Universität Basel-->
-		<target>z3950.obvsg.at:9991/acc01</target> <!--Národní knihovna Rakouska-->
+		<!--<target>z3950.obvsg.at:9991/acc01</target> Národní knihovna Rakouska-->
 	</profile>
 
 	<profile name="cpk_ger" type="z39.50">
 		<target>z3950.gbv.de/gvk</target> <!--Der Gemeinsame Bibliotheksverbund (GBV) -->
 		<target>opac.nebis.ch:9909/NEBIS_UTF</target> <!--Zentralbibliothek Zürich-->
 		<target>aleph.unibas.ch:9909/IDS_ANSEL</target> <!--Universität Basel-->
-		<target>z3950.obvsg.at:9991/acc01</target> <!--Národní knihovna Rakouska-->
+		<!--<target>z3950.obvsg.at:9991/acc01</target> Národní knihovna Rakouska-->
 	</profile>
 
 	<profile name="cpk_slov" type="z39.50">
@@ -169,7 +172,7 @@
 		<target>ipac.kvkli.cz:8887/li_us_cat</target> <!--Krajská vědecká knihovna Liberec-->
 		<target>svk7.svkkl.cz:8887/kl_us_cat</target> <!--Středočeská vědecká knihovna v Kladně-->
 		<target>aleph.osu.cz:9991/OSU01</target> <!--Ostravská univerzita-->
-		<target>aleph.lib.cas.cz:9991/AV</target> <!--Souborný katalog Akademie věd</target>-->
+		<!--<target>aleph.lib.cas.cz:9991/AV-UTF</target> Souborný katalog Akademie věd</target>-->
 		<target>aleph.svkhk.cz:9991/KATALOG</target> <!--Studijní a vědecká knihovna v Hradci Králové-->
 		<target>arl.cbvk.cz:8888/cbvk_us_cat</target> <!--Jihočeská vědecká knihovna v Českých Budějovicích-->
 	</profile>
@@ -192,14 +195,14 @@
 	</profile>
 
 	<profile name="fanm_01" type="z39.50">
-		<target>minas.jcu.cz:9991/JCU01</target>
+		<target>minas.jcu.cz:9991/jcu01_utf</target>
 	</profile>
 
 	<profile name="svkkl_01" type="z39.50">
 		<target>aleph.nkp.cz:9991/NKC-UTF</target> <!--Národní knihovna ČR-->
 		<target>aleph.mzk.cz:9991/MZK01-UTF</target> <!--Moravská zemská knihovna v Brně-->
 		<target>aleph.vkol.cz:9991/SVK01</target> <!--Vědecká knihovna Olomouc-->
-		<target>katalog.svkos.cz:9991/katalog</target> <!--Moravskoslezská vědecká knihovna v Ostravě-->
+		<target>katalog.svkos.cz:9991/katalog_utf</target> <!--Moravskoslezská vědecká knihovna v Ostravě-->
 		<target>arl.cbvk.cz:8888/cbvk_us_cat</target> <!--Jihočeská vědecká knihovna v Českých Budějovicích-->
 		<target>aleph.nkp.cz:9991/SKC-UTF</target> <!--Souborný katalog ČR-->
 	</profile>
@@ -218,7 +221,7 @@
 		<!--<target>195.113.12.38:2220/TITLES
 		</target>Katalog knihovny Centrum pro ekonomický výzkum a doktorské studium-->
 		<target>library.vse.cz:2100/default</target> <!--Vysoká škola ekonomická Praha-->
-		<target>katalog.iir.cz:9991/UMV</target> <!--Ústav mezinárodních vztahů monografie-->
+		<!--<target>katalog.iir.cz:9991/UMV</target> Ústav mezinárodních vztahů monografie-->
 	</profile>
 
 	<profile name="cnb_04" type="z39.50">
@@ -226,7 +229,7 @@
 	</profile>
 
 	<profile name="cnb_05" type="z39.50">
-		<target>z3950.copac.ac.uk:210/COPAC</target> <!--COPAC CNL03976-->
+		<!--<target>z3950.copac.ac.uk:210/COPAC</target> MODS - COPAC CNL03976-->
 		<target auth="CHUNPR2210/RD-7JTSx">z3950cat.bl.uk:9909/ZBLACU</target> <!--British Library-->
 		<target auth="knihovnycz/knihovnycz1">amicus.collectionscanada.gc.ca:210/any
 		</target> <!--Národní knihovna Kanady-->
@@ -234,7 +237,7 @@
 	</profile>
 
 	<profile name="cnb_06" type="z39.50">
-		<target>jolis.worldbankimflib.org:2200/unicorn</target> <!--World Bank-->
+		<target>imf.alma.exlibrisgroup.com:1921/01TIMF_INST</target> <!--World Bank-->
 		<target>z3950.gbv.de/gvk</target> <!--Der Gemeinsame Bibliotheksverbund (GBV) -->
 		<target>opac.nebis.ch:9909/NEBIS_UTF</target> <!--Zentralbibliothek Zürich-->
 	</profile>
