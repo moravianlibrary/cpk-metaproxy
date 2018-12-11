@@ -28,6 +28,7 @@
 			</xsl:for-each>
 
 			<hideunavailable/>
+			<hideerrors/>
 		</filter>
 
 	</xsl:template>
