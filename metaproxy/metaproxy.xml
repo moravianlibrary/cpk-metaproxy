@@ -41,10 +41,6 @@
 
 			<xi:include href="multi.xml" />
 
-			<!--
-			<filter type="multi"/>
-			-->
-
 			<filter type="z3950_client">
 				<timeout>30</timeout>
 			</filter>

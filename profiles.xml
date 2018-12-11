@@ -140,8 +140,7 @@
 		<target auth="CHUNPR2210/RD-7JTSx">z3950cat.bl.uk:9909/ZBLACU</target> <!--British Library-->
 		<target>lx2.loc.gov:210/LCDB</target> <!--Library of Congress-->
 		<target>library.ox.ac.uk:210/ALEPH</target> <!--Library of Oxford-->
-		<!--<target auth="knihovnycz/knihovnycz1">amicus.collectionscanada.gc.ca:210/any
-		</target> Národní knihovna Kanady-->
+		<!-- <target auth="knihovnycz/knihovnycz1">amicus.collectionscanada.gc.ca:210/any</target> --> <!--Národní knihovna Kanady-->
 	</profile>
 
 	<profile name="cpk_nem" type="z39.50">
