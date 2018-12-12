@@ -67,7 +67,7 @@
 	</profile>
 
         <profile name="cpk_nkc" type="z39.50">
-                <<target>aleph.nkp.cz:9991/NKC-UTF</target> <!-- Národní knihovna-->
+                <target>aleph.nkp.cz:9991/NKC-UTF</target> <!-- Národní knihovna-->
         </profile>
 
 	<profile name="uk_1" type="z39.50">
