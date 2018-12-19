@@ -43,7 +43,7 @@
 	</profile>
 
 	<profile name="cpk_univ" type="z39.50">
-		<target>hugo.uk.zcu.cz:9991/ZUP01</target> <!--Západočeská univerzita-->
+		<target>aleph.zcu.cz:9991/ZUP01_UTF</target> <!--Západočeská univerzita-->
 		<target>aleph.muni.cz:9991/MUB01Z</target> <!--Masarykova univerzita-->
 		<!--<target>cougar.lib.vutbr.cz:9991/BUT01_PRIMO</target> Vysoké učební technické Brno-->
 		<target>katalog.k.utb.cz:9991/UTB01_WEB</target> <!--Univerzita Tomáše Bati ve Zlíně-->
@@ -60,7 +60,7 @@
 		<!--<target>katalog.kjm.cz:9909/kjm_u</target>-->
 		<target>aleph.muni.cz:9991/MUB01Z</target>
 		<target>library.vse.cz:2100/default</target>
-		<target>hugo.uk.zcu.cz:9991/ZUP01</target>
+		<target>aleph.zcu.cz:9991/ZUP01_UTF</target> <!--Západočeská univerzita-->
 		<target>aleph.osu.cz:9991/OSU01</target>
 		<target>svk7.svkkl.cz:8887/kl_us_cat</target>
 		<target>web2.uk.tul.cz:9991/monografie</target>
@@ -175,7 +175,7 @@
 		<target>aleph.vkol.cz:9991/SVK01UTF</target> <!--Vědecká knihovna Olomouc-->
 		<target>ipac.kvkli.cz:8887/li_us_cat</target> <!--Krajská vědecká knihovna Liberec-->
 		<target>svk7.svkkl.cz:8887/kl_us_cat</target> <!--Středočeská vědecká knihovna v Kladně-->
-		<target>aleph.osu.cz:9991/OSU01</target> <!--Ostravská univerzita-->
+		<target>katalog.svkos.cz:9991/katalog_utf</target> <!-- Moravskoslezská vědecká knihovna v Ostravě-->
 		<!--<target>aleph.lib.cas.cz:9991/AV-UTF</target> Souborný katalog Akademie věd</target>-->
 		<target>aleph.svkhk.cz:9991/KATALOG</target> <!--Studijní a vědecká knihovna v Hradci Králové-->
 		<target>arl.cbvk.cz:8888/cbvk_us_cat</target> <!--Jihočeská vědecká knihovna v Českých Budějovicích-->
