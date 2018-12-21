@@ -278,7 +278,7 @@
 		<!-- TODO katalog.kkvysociny.cz:8888/un_cat  kódování Krajská knihovna Vysočiny-->
         </profile>
 
-        <profile name="muni_03" type="z39.50">
+        <profile name="muni_01" type="z39.50">
 		<target>ilsz3950.nlm.nih.gov:7091/VOYAGER</target> <!--National Library of Medicine-->
 		<target>195.113.87.235:9999/MEDVIK_utf</target> <!--Národní lékařská knihovna-->
         </profile>
