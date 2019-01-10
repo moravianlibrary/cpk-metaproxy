@@ -143,6 +143,13 @@
 		<target>library.ox.ac.uk:210/ALEPH</target>
 	</profile>
 
+       <profile name="kpsys_1" type="z39.50">
+                <target>aleph.nkp.cz:9909/SKC</target>
+		<target>aleph.mzk.cz:9991/MZK01</target>
+		<target>aleph.vkol.cz:9991/SVK01</target>
+        </profile>
+
+
 	<profile name="cpk_ang" type="z39.50">
 		<target auth="CHUNPR2210/RD-7JTSx">z3950cat.bl.uk:9909/ZBLACU</target> <!--British Library-->
 		<target>lx2.loc.gov:210/LCDB</target> <!--Library of Congress-->
