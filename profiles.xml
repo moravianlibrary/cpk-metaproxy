@@ -67,9 +67,9 @@
 		<target>web2.uk.tul.cz:9991/monografie</target>
 	</profile>
 
-        <profile name="cpk_nkc" type="z39.50">
-                <target>aleph.nkp.cz:9991/NKC-UTF</target> <!-- Národní knihovna-->
-        </profile>
+	<profile name="cpk_nkc" type="z39.50">
+		<target>aleph.nkp.cz:9991/NKC-UTF</target> <!-- Národní knihovna-->
+	</profile>
 
 	<profile name="uk_1" type="z39.50">
 		<!--<target>katalog.kjm.cz:9909/kjm_u</target>-->
@@ -128,9 +128,9 @@
 		<target auth="Z3950/Z3950_BNF">z3950.bnf.fr:2211/TOUT</target>
 	</profile>
 
-        <profile name="bnf" type="z39.50" format="unimarc">
-                <target auth="Z3950/Z3950_BNF">z3950.bnf.fr:2211/TOUT</target>
-        </profile>
+	<profile name="bnf" type="z39.50" format="unimarc">
+		<target auth="Z3950/Z3950_BNF">z3950.bnf.fr:2211/TOUT</target>
+	</profile>
 
 	<profile name="npu_1" type="z39.50">
 		<target auth="CHUNPR2210/RD-7JTSx">z3950cat.bl.uk:9909/ZBLACU</target>
@@ -144,11 +144,11 @@
 		<target>library.ox.ac.uk:210/ALEPH</target>
 	</profile>
 
-       <profile name="kpsys_1" type="z39.50">
-                <target>aleph.nkp.cz:9909/SKC</target>
+	<profile name="kpsys_1" type="z39.50">
+		<target>aleph.nkp.cz:9909/SKC</target>
 		<target>aleph.mzk.cz:9991/MZK01</target>
 		<target>aleph.vkol.cz:9991/SVK01</target>
-        </profile>
+	</profile>
 
 
 	<profile name="cpk_ang" type="z39.50">
@@ -273,22 +273,22 @@
 		<target>arl.cbvk.cz:8888/cbvk_us_cat</target> <!--Jihočeská vědecká knihovna v Českých Budějovicích-->
 		<target>aleph.muni.cz:9991/MUB01Z</target> <!--Masarykova univerzita-->
 		<!-- to do Knihovna Jiřího Mahena-->
-        </profile>
+	</profile>
 
-        <profile name="mkp_02" type="z39.50">
-                <target>katalog.svkos.cz:9991/katalog_utf</target> <!--Moravskoslezská vědecká knihovna v Ostravě-->
+	<profile name="mkp_02" type="z39.50">
+		<target>katalog.svkos.cz:9991/katalog_utf</target> <!--Moravskoslezská vědecká knihovna v Ostravě-->
 		<!-- TODO katalog.svkul.cz:9909/SVKULM - kódování Ústí nad Labem-->
-        </profile>
+	</profile>
 
 	<profile name="mkp_03" type="z39.50">
 		<!--Krajská knihovna Františka Bartoše ve Zlíně-->
 		<!--Městská knihovna Plzeň-->
 		<!-- TODO katalog.kkvysociny.cz:8888/un_cat  kódování Krajská knihovna Vysočiny-->
-        </profile>
+	</profile>
 
-        <profile name="muni_01" type="z39.50">
+	<profile name="muni_01" type="z39.50">
 		<target>ilsz3950.nlm.nih.gov:7091/VOYAGER</target> <!--National Library of Medicine-->
 		<target>195.113.87.235:9999/MEDVIK_utf</target> <!--Národní lékařská knihovna-->
-        </profile>
+	</profile>
 
 </profiles>
