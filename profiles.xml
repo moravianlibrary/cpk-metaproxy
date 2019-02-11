@@ -291,4 +291,11 @@
 		<target>195.113.87.235:9999/MEDVIK_utf</target> <!--Národní lékařská knihovna-->
 	</profile>
 
+	<profile name="kmda_01" type="z39.50">
+		<target>library.ox.ac.uk:210/ALEPH</target> <!--Library of Oxford-->
+		<target>www.knihovny.cz:9000/bnf</target> <!--Francouzská národní knihovna-->
+		<target>agama.ruk.cuni.cz:9992/CKSU</target> <!--Univerzita Karlova-->
+		<target>z3950.gbv.de/gvk</target> <!--Der Gemeinsame Bibliotheksverbund (GBV) -->
+	</profile>
+
 </profiles>
