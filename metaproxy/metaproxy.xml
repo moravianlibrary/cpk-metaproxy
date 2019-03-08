@@ -37,6 +37,8 @@
 				<category access="true"/>
 			</filter>
 
+			<filter type="sru_z3950"/>
+
 			<xi:include href="databases.xml" />
 
 			<xi:include href="multi.xml" />
