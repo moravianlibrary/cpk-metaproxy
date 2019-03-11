@@ -187,6 +187,7 @@
 		<!--<target>aleph.lib.cas.cz:9991/AV-UTF</target> Souborný katalog Akademie věd</target>-->
 		<target>aleph.svkhk.cz:9991/KATALOG</target> <!--Studijní a vědecká knihovna v Hradci Králové-->
 		<target>arl.cbvk.cz:8888/cbvk_us_cat</target> <!--Jihočeská vědecká knihovna v Českých Budějovicích-->
+		<target>aleph.svkpl.cz:9991/PNAAL</target> <!-- Studijní a vědecká knihovna Plzeňského kraje-->
 	</profile>
 
 	<profile name="cpk_anal" type="z39.50">
@@ -297,5 +298,24 @@
 		<target>agama.ruk.cuni.cz:9992/CKSU</target> <!--Univerzita Karlova-->
 		<target>z3950.gbv.de/gvk</target> <!--Der Gemeinsame Bibliotheksverbund (GBV) -->
 	</profile>
+	
+	<profile name="vsb_01" type="z39.50">
+		<target>aleph.nkp.cz:9991/SKC-UTF</target> <!--Souborný katalog ČR-->
+		<target>aleph.nkp.cz:9991/NKC-UTF</target> <!--Národní knihovna ČR-->
+		<target>aleph.mzk.cz:9991/MZK01-UTF</target> <!--Moravská zemská knihovna v Brně-->
+		<target>aleph.vkol.cz:9991/SVK01UTF</target> <!--Vědecká knihovna Olomouc-->
+		<target>katalog.svkos.cz:9991/katalog_utf</target> <!--Moravskoslezská vědecká knihovna v Ostravě-->
+	</profile>
 
+	<profile name="zcu_01" type="z39.50">
+		<target>aleph.nkp.cz:9991/NKC-UTF</target> <!--Národní knihovna ČR-->
+		<target>aleph.mzk.cz:9991/MZK01-UTF</target> <!--Moravská zemská knihovna v Brně-->
+		<target>aleph.vkol.cz:9991/SVK01UTF</target> <!--Vědecká knihovna Olomouc-->
+		<target>svk7.svkkl.cz:8887/kl_us_cat</target> <!--Středočeská vědecká knihovna v Kladně-->
+		<target>ipac.kvkli.cz:8887/li_us_cat</target> <!--Krajská vědecká knihovna Liberec-->
+		<target>aleph.osu.cz:9991/OSU01</target> <!--Ostravská univezita-->
+		<!--<target>aleph.lib.cas.cz:9991/AV-UTF</target> Souborný katalog Akademie věd</target>-->
+		<target>aleph.svkhk.cz:9991/KATALOG</target> <!--Studijní a vědecká knihovna v Hradci Králové-->
+		<target>arl.cbvk.cz:8888/cbvk_us_cat</target> <!--Jihočeská vědecká knihovna v Českých Budějovicích-->
+	</profile>
 </profiles>
