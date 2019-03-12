@@ -318,4 +318,33 @@
 		<target>aleph.svkhk.cz:9991/KATALOG</target> <!--Studijní a vědecká knihovna v Hradci Králové-->
 		<target>arl.cbvk.cz:8888/cbvk_us_cat</target> <!--Jihočeská vědecká knihovna v Českých Budějovicích-->
 	</profile>
+
+	<profile name="univtest1" type="z39.50">
+		<target>aleph.zcu.cz:9991/ZUP01_UTF</target>
+	</profile>
+
+	<profile name="univtest2" type="z39.50">
+		<target>aleph.muni.cz:9991/MUB01Z</target>
+	</profile>
+
+	<profile name="univtest3" type="z39.50">
+		<target>katalog.k.utb.cz:9991/UTB01_WEB</target>
+	</profile>
+
+	<profile name="univtest4" type="z39.50">
+		<target>library.upol.cz:8889/upol_us_cat</target>
+	</profile>
+
+	<profile name="univtest5" type="z39.50">
+		<target>library.vse.cz:2100/default</target>
+	</profile>
+
+	<profile name="univtest6" type="z39.50">
+		<target>aleph.osu.cz:9991/OSU01</target>
+	</profile>
+
+	<profile name="univtest7" type="z39.50">
+		<target>agama.ruk.cuni.cz:9992/CKSU</target>
+	</profile>
+
 </profiles>

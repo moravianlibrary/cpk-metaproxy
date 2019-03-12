@@ -193,7 +193,9 @@
             <th>Author</th>
             <th>Title</th>
             <th>ISBN</th>
-            <th>SIGLA</th>
+	    <th>SIGLA</th>
+	    <th>003</th>
+	    <th>040</th>
           </tr>
           <xsl:for-each select="srw:record">
             <tr>
@@ -205,10 +207,17 @@
               </td>
               <td>
                 <xsl:value-of select="srw:recordData//slim:record/slim:datafield[@tag='020']/slim:subfield[@code='a']"/>
-              </td>
+	      </td>
+	      <td>
+               <xsl:value-of select="srw:recordData//slim:record/slim:datafield[@tag='910']/slim:subfield[@code='a']"/>
+               </td>
+	       <td>
+	       <xsl:value-of select="srw:recordData//slim:record/slim:datafield[@tag='003']"/>
+               </td>
               <td>
-                <xsl:value-of select="srw:recordData//slim:record/slim:datafield[@tag='040']/slim:subfield[@code='d']"/>
-              </td>
+                <xsl:value-of select="srw:recordData//slim:record/slim:datafield[@tag='040']"/>
+	      </td>
+ 	      
             </tr>
           </xsl:for-each>
         </table>
