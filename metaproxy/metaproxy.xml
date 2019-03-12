@@ -37,7 +37,15 @@
 				<category access="true"/>
 			</filter>
 
+			<filter type="http_file">
+				<area>
+					<documentroot>www/</documentroot>
+					<prefix>/www</prefix>
+				</area>
+			</filter>
+
 			<filter type="sru_z3950">
+				<stylesheet>/www/sru.xsl</stylesheet>
 				<limit retrieve="50"/>
 			</filter>
 
