@@ -37,7 +37,13 @@
 				<category access="true"/>
 			</filter>
 
-			<filter type="sru_z3950"/>
+			<filter type="sru_z3950">
+				<limit retrieve="50"/>
+			</filter>
+
+			<filter type="cql_rpn">
+				<conversion file="cql2pqf.txt"/>
+			</filter>
 
 			<xi:include href="databases.xml" />
 
