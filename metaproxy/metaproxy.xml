@@ -57,6 +57,19 @@
 
 			<xi:include href="multi.xml" />
 
+			<filter type="record_transform">
+				<retrievalinfo>
+					<retrieval syntax="usmarc"/>
+					<retrieval syntax="opac"/>
+					<retrieval syntax="sutrs"/>
+					<retrieval name="F" syntax="xml">
+						<backend name="F" syntax="usmarc">
+							<marc inputcharset="utf-8" inputformat="marc" outputcharset="utf-8" outputformat="marcxml" />
+						</backend>
+					</retrieval>
+				</retrievalinfo>
+			</filter>
+
 			<filter type="z3950_client">
 				<timeout>30</timeout>
 			</filter>
