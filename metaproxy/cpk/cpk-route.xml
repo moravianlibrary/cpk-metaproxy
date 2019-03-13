@@ -29,6 +29,12 @@
 					<marc inputformat="xml" inputcharset="utf-8" outputformat="marc" outputcharset="utf-8"/>
 				</backend>
 			</retrieval>
+			<retrieval syntax="xml">
+				<backend name="">
+					<xslt stylesheet="cpk/solrmarc-to-marc21.xsl"/>
+					<xslt stylesheet="cpk/collection-to-record.xsl"/>
+				</backend>
+			</retrieval>
 		</retrievalinfo>
 	</filter>
 
