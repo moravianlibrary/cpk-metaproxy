@@ -3,7 +3,7 @@
                 xmlns:srw="http://docs.oasis-open.org/ns/search-ws/sruResponse"
                 xmlns:dc="http://www.loc.gov/zing/srw/dcschema/v1.0/"
                 xmlns:zr="http://explain.z3950.org/dtd/2.0/"
-                xmlns:diag="http://www.loc.gov/zing/srw/diagnostic/"
+                xmlns:diag="http://docs.oasis-open.org/ns/search-ws/diagnostic"
                 xmlns:slim="http://www.loc.gov/MARC21/slim"
                 version="1.0">
 
@@ -21,6 +21,7 @@
         <title>
           <xsl:value-of select="//zr:explain/zr:databaseInfo/zr:title"/>
         </title>
+        <link type="text/css" rel="stylesheet" media="all" href="/www/style.css" />
       </head>
       <body>
         <div class="body">
@@ -34,97 +35,54 @@
   <xsl:template match="//zr:explain">
     <xsl:call-template name="dbinfo"/>
     <xsl:call-template name="diagnostic"/>
-    <xsl:call-template name="indexinfo"/>
-    <xsl:call-template name="relationinfo"/>
     <xsl:call-template name="searchform"/>
   </xsl:template>
 
 
   <!-- searchRetrieveResponse -->
   <xsl:template match="//srw:searchRetrieveResponse">
-    <h2>Search Results</h2>
+    <xsl:call-template name="dbinfo"/>
     <xsl:call-template name="searchform"/>
     <xsl:call-template name="diagnostic"/>
     <xsl:call-template name="displaysearch"/>
   </xsl:template>
 
-  <!-- scanResponse -->
-  <xsl:template match="//srw:scanResponse">
-    <h2>Scan Results</h2>
-    <xsl:call-template name="diagnostic"/>
-  </xsl:template>
-
-
   <xsl:template name="dbinfo">
     <div class="dbinfo">
-      <h1><xsl:value-of select="//zr:explain/zr:databaseInfo/zr:title"/>
-      </h1>
-      <h2><xsl:value-of select="//zr:explain/zr:databaseInfo/zr:description"/>
-      </h2>
-      <h4>
-        <xsl:value-of select="//zr:explain/zr:databaseInfo/zr:author"/>
-        <br/>
-        <xsl:value-of select="//zr:explain/zr:databaseInfo/zr:history"/>
-      </h4>
+      <h2>SRU search</h2>
     </div>
   </xsl:template>
 
 
   <xsl:template name="searchform">
     <div class="searchform">
-      <form name="searchform"  method="get">
-        <table border="1">
+      <form name="searchform" method="get">
+
+        <xsl:if test="//zr:serverInfo/zr:database/text() = 'Default'">
+          <xsl:attribute name="action">cpk_univ</xsl:attribute>
+        </xsl:if>
 
         <input type="hidden" name="operation" value="searchRetrieve"/>
 
-        <tr class="query">
-          <td>
-            <xsl:text>Search query: </xsl:text>
-          </td>
-          <td>
-            <input type="text" name="query" id="query" autofocus="true"/>
-          </td>
-        </tr>
+        <label for="query">Search query:</label>
+        <input type="text" name="query" id="query" autofocus="true" placeholder="CQL query (example dc.title=Romeo a julie AND dc.creator=William Shakespeare)"/>
 
-        <tr>
-          <td>
-            <xsl:text>startRecord: </xsl:text>
-          </td>
-          <td>
-            <input type="text" name="startRecord" id="startRecord" value="1"/>
-          </td>
-        </tr>
+        <label for="startRecord">Start record:</label>
+        <input type="text" name="startRecord" id="startRecord" value="1"/>
 
-        <tr>
-          <td>
-            <xsl:text> maximumRecords: </xsl:text>
-          </td>
-          <td>
-            <input type="text" name="maximumRecords" id="maximumRecords" value="10"/>
-          </td>
-        </tr>
+        <label for="maximumRecords">Maximum records:</label>
+        <input type="text" name="maximumRecords" id="maximumRecords" value="20"/>
 
-        <tr>
-          <td>
-            <xsl:text> stylesheet: </xsl:text>
-          </td>
-          <td>
-            <select name="stylesheet" id="stylesheet">
-              <option value="/www/sru.xsl">HTML</option>
-              <option value="">XML</option>
-            </select>
-          </td>
-        </tr>
+        <label for="stylesheet">Stylesheet:</label>
+        <select name="stylesheet" id="stylesheet">
+          <option value="/www/sru.xsl">HTML</option>
+          <option value="">XML</option>
+        </select>
 
-        <tr>
-          <td>
-            <div class="submit">
-              <input type="submit" value="Send Search Request"/>
-            </div>
-          </td>
-        </tr>
+        <div class="submit">
+          <input type="submit" value="Search"/>
+        </div>
 
-        </table>
       </form>
     </div>
 
@@ -140,34 +98,11 @@
 
   </xsl:template>
 
-  <xsl:template name="indexinfo">
-     <div class="dbinfo">
-       <xsl:for-each
-          select="//zr:indexInfo/zr:index[zr:map/zr:name/@set]">
-        <xsl:variable name="index">
-          <xsl:value-of select="zr:map/zr:name/@set"/>
-          <xsl:text>.</xsl:text>
-          <xsl:value-of select="zr:map/zr:name/text()"/>
-        </xsl:variable>
-        <b><xsl:value-of select="$index"/></b><br/>
-      </xsl:for-each>
-     </div>
-  </xsl:template>
-
-
-  <xsl:template name="relationinfo">
-      <xsl:for-each select="//zr:configInfo/zr:supports[@type='relation']">
-        <xsl:variable name="rel" select="text()"/>
-        <b><xsl:value-of select="$rel"/></b><br/>
-      </xsl:for-each>
-  </xsl:template>
-
 
   <!-- diagnostics -->
   <xsl:template name="diagnostic">
     <xsl:for-each select="//diag:diagnostic">
      <div class="diagnostic">
-        <!-- <xsl:value-of select="diag:uri"/> -->
         <xsl:text> </xsl:text>
         <xsl:value-of select="diag:message"/>
         <xsl:text>: </xsl:text>
@@ -180,15 +115,17 @@
 
     <div class="searchresults">
 
+      <h2>
+        <xsl:text>Search results</xsl:text>
+      </h2>
+
       <xsl:for-each select="srw:numberOfRecords">
-        <h4>
           <xsl:text>Number of Records: </xsl:text>
           <xsl:value-of select="."/>
-        </h4>
       </xsl:for-each>
 
       <xsl:for-each select="srw:records">
-        <table border="1">
+        <table class="results">
           <tr>
             <th>Author</th>
             <th>Title</th>
