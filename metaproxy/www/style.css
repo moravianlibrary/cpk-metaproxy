@@ -1,0 +1,40 @@
+.searchForm label, input, select {
+  float: left;
+  margin-bottom: 5px;
+}
+
+.searchForm label, input[type="submit"] {
+  clear: left;
+}
+
+.searchForm label {
+  width: 150px;
+}
+
+#query {
+  width: 600px;
+}
+
+div .searchform {
+  clear: left;
+}
+
+.diagnostic {
+  padding-top: 10px;
+  color: red;
+  font-weight: bold;
+  clear: left;
+}
+
+div .searchresults {
+  padding-top: 5px;
+  clear: left;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+table, th, td {
+  border: 1px solid black;
+}
