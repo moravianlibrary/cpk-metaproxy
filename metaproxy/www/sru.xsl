@@ -130,32 +130,72 @@
           <tr>
             <th>Author</th>
             <th>Title</th>
-            <th>ISBN</th>
+            <th>ISBN/ISSN</th>
+            <th>Published</th>
+            <th>Publisher</th>
             <th>SIGLA</th>
-            <th>003</th>
-            <th>040</th>
             <th>MARC</th>
           </tr>
           <xsl:for-each select="srw:record">
 
             <tr>
               <td>
-                <xsl:value-of select="srw:recordData//slim:record/slim:datafield[@tag='100']/slim:subfield[@code='a']"/>
+                <xsl:choose>
+                  <xsl:when test="srw:recordData//slim:record/slim:datafield[@tag='100']/slim:subfield[@code='a']">
+                    <xsl:value-of select="srw:recordData//slim:record/slim:datafield[@tag='100']/slim:subfield[@code='a'][1]"/>
+                  </xsl:when>
+                  <xsl:when test="srw:recordData//slim:record/slim:datafield[@tag='700']/slim:subfield[@code='a']">
+                    <xsl:value-of select="srw:recordData//slim:record/slim:datafield[@tag='700']/slim:subfield[@code='a'][1]"/>
+                  </xsl:when>
+                </xsl:choose>
               </td>
               <td>
                 <xsl:value-of select="srw:recordData//slim:record/slim:datafield[@tag='245']/slim:subfield[@code='a']"/>
+                <xsl:value-of select="srw:recordData//slim:record/slim:datafield[@tag='245']/slim:subfield[@code='n']"/>
+                <xsl:value-of select="srw:recordData//slim:record/slim:datafield[@tag='245']/slim:subfield[@code='p']"/>
               </td>
               <td>
-                <xsl:value-of select="srw:recordData//slim:record/slim:datafield[@tag='020']/slim:subfield[@code='a']"/>
+                <xsl:choose>
+                  <xsl:when test="srw:recordData//slim:record/slim:datafield[@tag='020']/slim:subfield[@code='a']">
+                    <xsl:value-of select="srw:recordData//slim:record/slim:datafield[@tag='020']/slim:subfield[@code='a'][1]"/>
+                  </xsl:when>
+                  <xsl:when test="srw:recordData//slim:record/slim:datafield[@tag='022']/slim:subfield[@code='a']">
+                    <xsl:value-of select="srw:recordData//slim:record/slim:datafield[@tag='022']/slim:subfield[@code='a'][1]"/>
+                  </xsl:when>
+                  <xsl:when test="srw:recordData//slim:record/slim:datafield[@tag='902']/slim:subfield[@code='a']">
+                    <xsl:value-of select="srw:recordData//slim:record/slim:datafield[@tag='902']/slim:subfield[@code='a'][1]"/>
+                  </xsl:when>
+                </xsl:choose>
               </td>
               <td>
-                <xsl:value-of select="srw:recordData//slim:record/slim:datafield[@tag='910']/slim:subfield[@code='a']"/>
+                <xsl:choose>
+                  <xsl:when test="srw:recordData//slim:record/slim:datafield[@tag='264']/slim:subfield[@code='c']">
+                    <xsl:value-of select="srw:recordData//slim:record/slim:datafield[@tag='264']/slim:subfield[@code='c'][1]"/>
+                  </xsl:when>
+                  <xsl:when test="srw:recordData//slim:record/slim:datafield[@tag='260']/slim:subfield[@code='c']">
+                    <xsl:value-of select="srw:recordData//slim:record/slim:datafield[@tag='260']/slim:subfield[@code='c'][1]"/>
+                  </xsl:when>
+                </xsl:choose>
               </td>
               <td>
-                <xsl:value-of select="srw:recordData//slim:record/slim:controlfield[@tag='003']"/>
+                <xsl:choose>
+                  <xsl:when test="srw:recordData//slim:record/slim:datafield[@tag='264']/slim:subfield[@code='b']">
+                    <xsl:value-of select="srw:recordData//slim:record/slim:datafield[@tag='264']/slim:subfield[@code='b'][1]"/>
+                  </xsl:when>
+                  <xsl:when test="srw:recordData//slim:record/slim:datafield[@tag='260']/slim:subfield[@code='b']">
+                    <xsl:value-of select="srw:recordData//slim:record/slim:datafield[@tag='260']/slim:subfield[@code='b'][1]"/>
+                  </xsl:when>
+                </xsl:choose>
               </td>
               <td>
-                <xsl:value-of select="srw:recordData//slim:record/slim:datafield[@tag='040']"/>
+                <xsl:choose>
+                  <xsl:when test="srw:recordData//slim:record/slim:datafield[@tag='910']/slim:subfield[@code='a']">
+                    <xsl:value-of select="srw:recordData//slim:record/slim:datafield[@tag='910']/slim:subfield[@code='a'][1]"/>
+                  </xsl:when>
+                  <xsl:when test="srw:recordData//slim:record/slim:controlfield[@tag='003']">
+                    <xsl:value-of select="srw:recordData//slim:record/slim:controlfield[@tag='003'][1]"/>
+                  </xsl:when>
+                </xsl:choose>
               </td>
               <td>
                 <xsl:attribute name="onclick">
