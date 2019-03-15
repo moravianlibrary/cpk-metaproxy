@@ -5,6 +5,7 @@
                 xmlns:zr="http://explain.z3950.org/dtd/2.0/"
                 xmlns:diag="http://docs.oasis-open.org/ns/search-ws/diagnostic"
                 xmlns:slim="http://www.loc.gov/MARC21/slim"
+                xmlns:zs="http://docs.oasis-open.org/ns/search-ws/sruResponse"
                 version="1.0">
 
   <xsl:output method="html" version="1.0" encoding="UTF-8" indent="yes"/>
@@ -133,8 +134,10 @@
             <th>SIGLA</th>
             <th>003</th>
             <th>040</th>
+            <th>MARC</th>
           </tr>
           <xsl:for-each select="srw:record">
+
             <tr>
               <td>
                 <xsl:value-of select="srw:recordData//slim:record/slim:datafield[@tag='100']/slim:subfield[@code='a']"/>
@@ -154,7 +157,40 @@
               <td>
                 <xsl:value-of select="srw:recordData//slim:record/slim:datafield[@tag='040']"/>
               </td>
+              <td>
+                <xsl:attribute name="onclick">
+                  (function() {
+                    var element = document.getElementById("record_<xsl:value-of select="zs:recordPosition"/>").style.display = "";
+                    element.style.display = "";
+                  })();</xsl:attribute>
+                <xsl:text>MARC</xsl:text>
+              </td>
             </tr>
+
+            <tr style="display:none;">
+              <xsl:attribute name="id">record_<xsl:value-of select="zs:recordPosition"/></xsl:attribute>
+              <td colspan="7">
+                <pre>
+                <xsl:for-each select="srw:recordData//slim:record/slim:controlfield">
+                  <xsl:value-of select="@tag"/>
+                  <xsl:text>    </xsl:text>
+                  <xsl:value-of select="text()"/>
+                  <br/>
+                </xsl:for-each>
+                <xsl:for-each select="srw:recordData//slim:record/slim:datafield">
+                  <xsl:value-of select="@tag"/>
+                  <xsl:for-each select="slim:subfield">
+                    <xsl:text> |</xsl:text>
+                    <xsl:value-of select="@code"/>
+                    <xsl:text> </xsl:text>
+                    <xsl:value-of select="text()"/>
+                  </xsl:for-each>
+                  <br/>
+                </xsl:for-each>
+                </pre>
+              </td>
+            </tr>
+
           </xsl:for-each>
         </table>
       </xsl:for-each>
