@@ -1,6 +1,7 @@
 .searchForm label, input, select {
   float: left;
   margin-bottom: 5px;
+  display: inline-block;
 }
 
 .searchForm label, input[type="submit"] {

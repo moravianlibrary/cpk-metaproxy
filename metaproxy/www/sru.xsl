@@ -56,7 +56,7 @@
 
 
   <xsl:template name="searchform">
-    <div class="searchform">
+    <div class="searchForm">
       <form name="searchform" method="get">
 
         <xsl:if test="//zr:serverInfo/zr:database/text() = 'Default'">
