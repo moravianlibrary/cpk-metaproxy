@@ -38,6 +38,7 @@
 			</filter>
 
 			<filter type="http_file">
+				<mimetypes>/etc/mime.types</mimetypes>
 				<area>
 					<documentroot>www/</documentroot>
 					<prefix>/www</prefix>
