@@ -197,13 +197,22 @@
                   </xsl:when>
                 </xsl:choose>
               </td>
-              <td>
+              <td class="marc">
+                <xsl:attribute name="id">show_details_<xsl:value-of select="zs:recordPosition"/></xsl:attribute>
                 <xsl:attribute name="onclick">
                   (function() {
-                    var element = document.getElementById("record_<xsl:value-of select="zs:recordPosition"/>").style.display = "";
-                    element.style.display = "";
+                    var id = "<xsl:value-of select="zs:recordPosition"/>";
+                    var details = document.getElementById("record_" + id);
+                    var link = document.getElementById("show_details_" + id);
+                    if (details.style.display == "none") {
+                      details.style.display = "";
+                      link.innerHTML = "↑";
+                    } else {
+                      details.style.display = "none";
+                      link.innerHTML = "↓";
+                    }
                   })();</xsl:attribute>
-                <xsl:text>MARC</xsl:text>
+                <xsl:text>↓</xsl:text>
               </td>
             </tr>
 

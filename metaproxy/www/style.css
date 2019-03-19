@@ -39,3 +39,7 @@ table {
 table, th, td {
   border: 1px solid black;
 }
+
+td[class="marc"] {
+  text-align: center;
+}
