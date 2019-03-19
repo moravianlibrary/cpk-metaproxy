@@ -232,7 +232,15 @@
                     <xsl:text> |</xsl:text>
                     <xsl:value-of select="@code"/>
                     <xsl:text> </xsl:text>
-                    <xsl:value-of select="text()"/>
+                    <xsl:choose>
+                      <xsl:when test="string-length(text()) &lt;= 100">
+                          <xsl:value-of select="text()"/>
+                      </xsl:when>
+                      <xsl:otherwise>
+                          <xsl:value-of select="substring(text(), 1, 100)"/>
+                          <xsl:text>...</xsl:text>
+                      </xsl:otherwise>
+                    </xsl:choose>
                   </xsl:for-each>
                   <br/>
                 </xsl:for-each>
