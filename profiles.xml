@@ -128,6 +128,10 @@
 		<target auth="Z3950/Z3950_BNF">z3950.bnf.fr:2211/TOUT</target>
 	</profile>
 
+	<profile name="brli" type="z39.50">
+		<target auth="CHUNPR2210/RD-7JTSx">z3950cat.bl.uk:9909/ZBLACU</target>
+	</profile>
+
 	<profile name="bnf" type="z39.50" format="unimarc">
 		<target auth="Z3950/Z3950_BNF">z3950.bnf.fr:2211/TOUT</target>
 	</profile>
