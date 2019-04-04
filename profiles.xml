@@ -53,6 +53,7 @@
 		<target>library.vse.cz:2100/default</target> <!--Vysoká škola ekonomická Praha-->
 		<target>aleph.osu.cz:9991/OSU01</target> <!--Ostravská univezita-->
 		<target>agama.ruk.cuni.cz:9992/CKSU</target> <!--Univerzita Karlova-->
+		<target>verbis.vsb.cz:9991/cpk_univ</target> <!--Ústřední knihovna VŠB-TU Ostrava-->
 		<!--<target>aleph.ntkcz.cz:9991/SKT01</target> Národní technická knihovna-->
 	</profile>
 
