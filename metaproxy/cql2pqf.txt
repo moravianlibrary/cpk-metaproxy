@@ -20,8 +20,8 @@ set.dc = info:srw/cql-context-set/1/dc-v1.1
 set.bib1 = 1.2.840.10003.3.1
 
 # Index info
-index.cql.serverChoice = 1=1010
-index.cql.all = 1=1010
+index.cql.serverChoice = 1=1016
+index.cql.all = 1=1016
 index.rec.id = 1=12 4=3
 index.dc.title = 1=4
 index.dc.creator = 1=1003
