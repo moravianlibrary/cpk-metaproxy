@@ -2,13 +2,15 @@
 
 	<defaultSolrUrl>http://frontie.cpk-infra.mzk.cz:6081/solr/index</defaultSolrUrl>
 
-	<profile name="cpk" type="solr">
+	<profile name="cpk" type="solr" public="true">
+		<description>Záznamy knihovny.cz</description>
 		<mergedFilters>
 			<filter>metaproxy_boolean:true</filter>
 		</mergedFilters>
 	</profile>
 
 	<profile name="cpk_mzk_01" type="solr">
+		<description>bla bla bla kecy</description>
 		<mergedFilters>
 			<filter>metaproxy_boolean:true</filter>
 		</mergedFilters>
@@ -27,7 +29,8 @@
 		</filters>
 	</profile>
 
-	<profile name="cpk_zahr" type="z39.50">
+	<profile name="cpk_zahr" type="z39.50" public="true">
+		<description>Zahraniční knihovny</description>
 		<target>lx2.loc.gov:210/LCDB</target> <!--Library of Congress-->
 		<target>opac.nebis.ch:9909/NEBIS_UTF</target> <!--Der Bibliotheksverbund Nebis (Švýcarsko)-->
 		<!--<target>z3950.nb.no:2100/Norbok</target> Norská královská knihovna-->
@@ -44,7 +47,8 @@
 		<target>carmin.sudoc.abes.fr:10646/abes-z39-public</target> <!--SUDOC - francouzský souborný katalog -->
 	</profile>
 
-	<profile name="cpk_univ" type="z39.50">
+	<profile name="cpk_univ" type="z39.50" public="true" default="true">
+		<description>České univerzitní knihovny</description>
 		<target>aleph.zcu.cz:9991/ZUP01_UTF</target> <!--Západočeská univerzita-->
 		<target>aleph.muni.cz:9991/MUB01Z</target> <!--Masarykova univerzita-->
 		<!--<target>cougar.lib.vutbr.cz:9991/BUT01_PRIMO</target> Vysoké učební technické Brno-->
@@ -183,7 +187,8 @@
 		<target>z3950.snk.sk:1111/clas02</target> <!--KIS3G-->
 	</profile>
 
-	<profile name="cpk_ces" type="z39.50">
+	<profile name="cpk_ces" type="z39.50" public="true">
+		<description>České knihovny</description>
 		<target>aleph.nkp.cz:9991/NKC-UTF</target> <!--Národní knihovna ČR-->
 		<target>aleph.mzk.cz:9991/MZK01-UTF</target> <!--Moravská zemská knihovna v Brně-->
 		<target>aleph.vkol.cz:9991/SVK01UTF</target> <!--Vědecká knihovna Olomouc-->

@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE example [
+<!ENTITY databases_form SYSTEM "/www/form.html">
+]>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
                 xmlns:srw="http://docs.oasis-open.org/ns/search-ws/sruResponse"
                 xmlns:dc="http://www.loc.gov/zing/srw/dcschema/v1.0/"
@@ -57,13 +60,18 @@
 
   <xsl:template name="searchform">
     <div class="searchForm">
-      <form name="searchform" method="get">
+      <form name="searchform" id="searchform" method="get">
 
+        <!--
         <xsl:if test="//zr:serverInfo/zr:database/text() = 'Default'">
           <xsl:attribute name="action">cpk_univ</xsl:attribute>
         </xsl:if>
+        -->
 
         <input type="hidden" name="operation" value="searchRetrieve"/>
+
+        <label for="database">Database:</label>
+        &databases_form;
 
         <label for="query">Search query:</label>
         <input type="text" name="query" id="query" autofocus="true" placeholder="CQL query (example dc.title=Romeo a julie AND dc.creator=William Shakespeare)"/>
@@ -88,6 +96,12 @@
     </div>
 
     <script>
+    var refresh = function() {
+      document.getElementById('searchform').action = document.getElementById('database').value;
+    };
+    refresh();
+    document.getElementById('database').onchange = refresh;
+
     var url = new URL(window.location.href);
     var params = url.searchParams;
     ["query", "startRecord", "maximumRecords"].forEach( function(field) {
@@ -95,6 +109,10 @@
         document.getElementById(field).value = params.get(field);
       }
     });
+    if (url.pathname.length > 1) {
+      var database = url.pathname.slice(1);
+      document.getElementById('database').value = database;
+    }
     </script>
 
   </xsl:template>
