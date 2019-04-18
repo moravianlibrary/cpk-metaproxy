@@ -89,6 +89,10 @@
       </form>
     </div>
 
+    <div class="help">
+      <p>Tady bude nápověda</p>
+    </div>
+
     <script>
     var refresh = function() {
       document.getElementById('searchform').action = document.getElementById('database').value;

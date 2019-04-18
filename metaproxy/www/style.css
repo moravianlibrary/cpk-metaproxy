@@ -32,6 +32,11 @@ div .searchresults {
   clear: left;
 }
 
+div .help {
+  padding-top: 5px;
+  clear: left;
+}
+
 table {
   border-collapse: collapse;
 }
