@@ -2,7 +2,7 @@
 
 	<defaultSolrUrl>http://frontie.cpk-infra.mzk.cz:6081/solr/index</defaultSolrUrl>
 
-	<profile name="cpk" type="solr" public="true">
+	<profile name="cpk" type="solr">
 		<description>Záznamy knihovny.cz</description>
 		<mergedFilters>
 			<filter>metaproxy_boolean:true</filter>

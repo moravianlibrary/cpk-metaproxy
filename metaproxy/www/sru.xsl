@@ -90,7 +90,74 @@
     </div>
 
     <div class="help">
-      <p>Tady bude nápověda</p>
+      <h2>Nápověda</h2>
+
+	<h3>Jak hledat:</h3>
+
+	<p>
+	Do vyhledávacího řádku zadávejte dotaz v jazyce CQL. Je možné použít logické operátory <b>OR AND NOT</b> (tyto operátory pište vždy velkými písmeny). <br />
+	Frázi můžete zadat do "uvozovek".  Hledání formulujte pomocí následující kódů hledání:
+	</p>
+	<p>
+	dc.title =  (název)<br />
+	dc.creator = (autoři)<br />
+	dc.identifier = (ISBN, ISSN)<br />
+	dc.date = (rok vydání)<br />
+	dc.publisher = (vydavatel)<br />
+	</p>
+	<p>
+	<b>Příklad hledání:</b>
+	<code>dc.title = "short stories" AND dc.date = 1990  NOT dc.creator=green</code>
+	</p>
+	<h3>Zpětná vazba</h3>
+	<p>
+	Pro nahlášení problémů s používáním vyhledávače prosím použijte email cpk-support(at)mzk.cz</p>
+
+	<h3>Prohledávané profily:</h3>
+	<h4>České univerzitní knihovny:</h4>
+	<ul>
+	<li>Západočeská univerzita v Plzni</li>
+	<li>Masarykova univerzita</li>
+	<li>Univerzita Tomáše Bati ve Zlíně</li>
+	<li>Univerzita Palackého v Olomouci</li>
+	<li>Vysoká škola ekonomická Praha</li>
+	<li>Ostravská univezita</li>
+	<li>Univerzita Karlova</li>
+	<li>Ústřední knihovna VŠB-TU Ostrava</li>
+	</ul>
+
+	<h4>České knihovny:</h4>
+	<ul>
+	<li>Národní knihovna ČR</li>
+	<li>Moravská zemská knihovna v Brně</li>
+	<li>Vědecká knihovna Olomouc</li>
+	<li>Krajská vědecká knihovna Liberec</li>
+	<li>Středočeská vědecká knihovna v Kladně</li>
+	<li>Moravskoslezská vědecká knihovna v Ostravě</li>
+	<li>Studijní a vědecká knihovna v Hradci Králové</li>
+	<li>Jihočeská vědecká knihovna v Českých Budějovicích</li>
+	<li>Studijní a vědecká knihovna Plzeňského kraje</li>
+	</ul>
+
+	<h4>Zahraniční knihovny:</h4>
+	<ul>
+	<li>Library of Congress</li>
+	<li>University of Oxford</li>
+	<li>Bibsys</li>
+	<li>Universität Basel</li>
+	<li>Slovenská národná knižnica</li>
+	<li>Network of Libraries and Information Centers in Switzerland</li>
+	<li>Norwegian national bibliography</li>
+	<li>GBV Common Library Network of the German States Bremen, Hamburg, Mecklenburg-Vorpommern, Niedersachsen, Sachsen-Anhalt, Schleswig-Holstein, Thüringen and the Foundation of Prussian Cultural Heritage</li>
+	<li>Norská královská knihovna</li>
+	<li>Polská národní knihovna</li>
+	<li>Královská knihovna ve Stockholmu</li>
+	<li>Francouzská národní knihovna</li>
+	<li>British Library</li>
+	<li>National Library of Medicine</li>
+	<li>SUDOC - francouzský souborný katalog</li>
+	</ul>
+
     </div>
 
     <script>
