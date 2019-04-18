@@ -62,12 +62,6 @@
     <div class="searchForm">
       <form name="searchform" id="searchform" method="get">
 
-        <!--
-        <xsl:if test="//zr:serverInfo/zr:database/text() = 'Default'">
-          <xsl:attribute name="action">cpk_univ</xsl:attribute>
-        </xsl:if>
-        -->
-
         <input type="hidden" name="operation" value="searchRetrieve"/>
 
         <label for="database">Database:</label>
