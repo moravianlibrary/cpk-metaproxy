@@ -53,7 +53,7 @@
 
   <xsl:template name="dbinfo">
     <div class="dbinfo">
-      <h2>SRU search</h2>
+      <h2>Vyhledávač v externích databázích</h2>
     </div>
   </xsl:template>
 
@@ -64,16 +64,16 @@
 
         <input type="hidden" name="operation" value="searchRetrieve"/>
 
-        <label for="database">Database:</label>
+        <label for="database">Databáze:</label>
         &databases_form;
 
-        <label for="query">Search query:</label>
+        <label for="query">Dotaz:</label>
         <input type="text" name="query" id="query" autofocus="true" placeholder="CQL query (example dc.title=Romeo a julie AND dc.creator=William Shakespeare)"/>
 
-        <label for="startRecord">Start record:</label>
+        <label for="startRecord">Od záznamu:</label>
         <input type="text" name="startRecord" id="startRecord" value="1"/>
 
-        <label for="maximumRecords">Maximum records:</label>
+        <label for="maximumRecords">Počet záznamů:</label>
         <input type="text" name="maximumRecords" id="maximumRecords" value="20"/>
 
         <label for="stylesheet">Stylesheet:</label>
@@ -83,7 +83,7 @@
         </select>
 
         <div class="submit">
-          <input type="submit" value="Search"/>
+          <input type="submit" value="Najdi"/>
         </div>
 
       </form>
@@ -129,22 +129,22 @@
     <div class="searchresults">
 
       <h2>
-        <xsl:text>Search results</xsl:text>
+        <xsl:text>Výsledky</xsl:text>
       </h2>
 
       <xsl:for-each select="srw:numberOfRecords">
-          <xsl:text>Number of Records: </xsl:text>
+          <xsl:text>Počet záznamů: </xsl:text>
           <xsl:value-of select="."/>
       </xsl:for-each>
 
       <xsl:for-each select="srw:records">
         <table class="results">
           <tr>
-            <th>Author</th>
-            <th>Title</th>
+            <th>Autor</th>
+            <th>Název</th>
             <th>ISBN/ISSN</th>
-            <th>Published</th>
-            <th>Publisher</th>
+            <th>Vydáno</th>
+            <th>Vydavatel</th>
             <th>SIGLA</th>
             <th>MARC</th>
           </tr>
@@ -218,13 +218,13 @@
                     var link = document.getElementById("show_details_" + id);
                     if (details.style.display == "none") {
                       details.style.display = "";
-                      link.innerHTML = "↑";
+                      link.innerHTML = "↑ (zabalit)";
                     } else {
                       details.style.display = "none";
-                      link.innerHTML = "↓";
+                      link.innerHTML = "↓ (rozbalit)";
                     }
                   })();</xsl:attribute>
-                <xsl:text>↓</xsl:text>
+                <xsl:text>↓ (rozbalit)</xsl:text>
               </td>
             </tr>
 
