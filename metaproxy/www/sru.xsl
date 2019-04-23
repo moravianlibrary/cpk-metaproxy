@@ -93,7 +93,6 @@
     var refresh = function() {
       document.getElementById('searchform').action = document.getElementById('database').value;
     };
-    refresh();
     document.getElementById('database').onchange = refresh;
 
     var url = new URL(window.location.href);
@@ -107,6 +106,7 @@
       var database = url.pathname.slice(1);
       document.getElementById('database').value = database;
     }
+    refresh();
     </script>
 
   </xsl:template>
