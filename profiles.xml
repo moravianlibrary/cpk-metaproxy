@@ -131,9 +131,23 @@
 		<target>frontie.cpk-infra.mzk.cz:9000/cpk</target>
 	</profile>
 
-	<profile name="test" type="z39.50" format="unimarc">
-		<target auth="Z3950/Z3950_BNF">z3950.bnf.fr:2211/TOUT</target>
+	<profile name="test" type="z39.50">
+		<target>aleph.lib.cas.cz:9991/AV-UTF</target>
 	</profile>
+
+	<profile name="osu_01" type="z39.50">
+                <target>aleph.mzk.cz:9991/MZK01-UTF</target> <!--Moravská zemská knihovna v Brně-->
+		<target>lx2.loc.gov:210/LCDB</target> <!--Library of Congress-->
+		<target>katalog.svkos.cz:9991/katalog_utf</target> <!-- Moravskoslezská vědecká knihovna v Ostravě-->
+		<target>aleph.muni.cz:9991/MUB01Z</target> <!--Masarykova univerzita-->
+		<target>aleph.nkp.cz:9991/NKC-UTF</target> <!--Národní knihovna ČR-->
+		<target>aleph.nkp.cz:9991/SKC-UTF</target> <!--Souborný katalog ČR-->
+		<!--<target>aleph.ntkcz.cz:9991/SKT01</target> Národní technická knihovna-->
+		<target>library.ox.ac.uk:210/ALEPH</target> <!--Library of Oxford-->
+		<target>library.upol.cz:8889/upol_us_cat</target>
+		<target>aleph.vkol.cz:9991/SVK01UTF</target> <!--Vědecká knihovna Olomouc-->
+        </profile>
+
 
 	<profile name="brli" type="z39.50">
 		<target auth="CHUNPR2210/RD-7JTSx">z3950cat.bl.uk:9909/ZBLACU</target>
