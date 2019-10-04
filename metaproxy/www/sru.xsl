@@ -302,19 +302,6 @@
         <li>Ústřední knihovna VŠB-TU Ostrava</li>
         </ul>
 
-        <h4>České knihovny:</h4>
-        <ul>
-        <li>Národní knihovna ČR</li>
-        <li>Moravská zemská knihovna v Brně</li>
-        <li>Vědecká knihovna Olomouc</li>
-        <li>Krajská vědecká knihovna Liberec</li>
-        <li>Středočeská vědecká knihovna v Kladně</li>
-        <li>Moravskoslezská vědecká knihovna v Ostravě</li>
-        <li>Studijní a vědecká knihovna v Hradci Králové</li>
-        <li>Jihočeská vědecká knihovna v Českých Budějovicích</li>
-        <li>Studijní a vědecká knihovna Plzeňského kraje</li>
-        </ul>
-
         <h4>Zahraniční knihovny:</h4>
         <ul>
         <li>Library of Congress</li>
