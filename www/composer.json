@@ -1,5 +1,5 @@
 {
-	"name": "metaproxy_solr",
+	"name": "mzk.cz/metaproxy_solr",
 	"description": "solr proxy for metaproxy",
 	"require": {
 		"pear/file_marc": "1.1.2"
