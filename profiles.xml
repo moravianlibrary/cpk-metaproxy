@@ -396,4 +396,11 @@
 		<target>katalog.nsk.hr:9992/NSK01_WEB</target>
 	</profile>
 
+	<profile name="deskovky" type="solr">
+		<description>Deskové, karetní a další společenské hry</description>
+		<filters>
+			<filter>cpk_detected_format_facet_str_mv:"0/BOARD_GAMES/"</filter>
+		</filters>
+	</profile>
+	
 </profiles>
