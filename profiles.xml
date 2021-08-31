@@ -398,9 +398,9 @@
 
 	<profile name="deskovky" type="solr">
 		<description>Deskové, karetní a další společenské hry</description>
-		<filters>
+		<mergedFilters>
 			<filter>cpk_detected_format_facet_str_mv:"0/BOARD_GAMES/"</filter>
-		</filters>
+		</mergedFilters>
 	</profile>
 	
 </profiles>
