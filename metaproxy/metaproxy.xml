@@ -72,7 +72,7 @@
 			</filter>
 
 			<filter type="z3950_client">
-				<timeout>30</timeout>
+				<timeout>38</timeout>
 			</filter>
 
 			<filter type="bounce"/>
