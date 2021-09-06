@@ -219,17 +219,8 @@
 	<profile name="cpk_anal" type="z39.50">
 		<target>aleph.nkp.cz:9991/ANL-UTF</target> <!--Databáze českých článků - báze ANL-->
 		<target>aleph.muni.cz:9991/MUB02Z</target> <!--Katalog článků Masarykovy univezity-->
-		<target>z39an.skat.cz:9999/clanky</target> <!--Souborný katalog článků SKAT-->
 		<target>aleph.svkpl.cz:9991/PNAAL</target> <!--Báze článků SVKPK-->
 		<target>195.113.87.235:9999/BMC_utf</target> <!-- Bibliographia Medica Čechoslovaca -->
-	</profile>
-	
-	
-	<profile name="cpk_anal_fast" type="z39.50">
-		<target>aleph.nkp.cz:9991/ANL-UTF</target> <!--Databáze českých článků - báze ANL-->
-		<target>aleph.muni.cz:9991/MUB02Z</target> <!--Katalog článků Masarykovy univezity-->
-		<target>z39an.skat.cz:9999/clanky</target> <!--Souborný katalog článků SKAT-->
-		<target>aleph.svkpl.cz:9991/PNAAL</target> <!--Báze článků SVKPK-->
 	</profile>
 
 	<profile name="cpk_stare" type="z39.50">
