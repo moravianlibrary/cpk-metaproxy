@@ -42,6 +42,7 @@
 		<target>z3950.libris.kb.se:210/LIBR</target> <!--Královská knihovna ve Stockholmu-->
 		<target>www.knihovny.cz:9000/bnf</target> <!--Francouzská národní knihovna-->
 		<target>z3950.gbv.de/gvk</target> <!--Der Gemeinsame Bibliotheksverbund (GBV) -->
+		<target>z3950.k10plus.de:210</target> <!--GBV plus -->
 		<target auth="CHUNPR2210/RD-7JTSx">z3950cat.bl.uk:9909/ZBLACU</target> <!--British Library-->
 		<target>ilsz3950.nlm.nih.gov:7091/VOYAGER</target> <!--National Library of Medicine-->
 		<target>carmin.sudoc.abes.fr:10646/abes-z39-public</target> <!--SUDOC - francouzský souborný katalog -->
