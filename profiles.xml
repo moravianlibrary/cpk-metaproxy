@@ -57,12 +57,12 @@
 		<target>lx2.loc.gov:210/LCDB</target>
 		<target>aleph.nkp.cz:9991/SKC-UTF</target>
 		<target>aleph.muni.cz:9991/MUB01Z</target>
-		<target>library.vse.cz:2100/default</target>
-		<target>aleph.zcu.cz:9991/ZUP01_UTF</target> <!--Západočeská univerzita-->
 		<target>aleph.osu.cz:9991/OSU01</target>
 		<target>svk7.svkkl.cz:8887/kl_us_cat</target>
-		<target>web2.uk.tul.cz:9991/monografie</target>
+		<!--<target>web2.uk.tul.cz:9991/monografie</target>-->
 		<!--<target>katalog.kjm.cz:9909/kjm_u</target>-->
+		<!--<target>library.vse.cz:2100/default</target>-->
+		<!--<target>aleph.zcu.cz:9991/ZUP01_UTF</target>Západočeská univerzita temporary system error -->
 	</profile>
 
 	<profile name="cpk_nkc" type="z39.50">
@@ -70,14 +70,14 @@
 	</profile>
 
 	<profile name="uk_1" type="z39.50">
-		<!--<target>katalog.kjm.cz:9909/kjm_u</target>-->
 		<target>aleph.svkpl.cz:9991/PNAAL</target>
 		<target>aleph.muni.cz:9991/MUB01Z</target>
 		<target>library.vse.cz:2100/default</target>
 		<target>eu01.alma.exlibrisgroup.com:210/47BIBSYS_NETWORK</target>
-		<target>opac.nebis.ch:9909/NEBIS_UTF</target>
+		<target>eu03.alma.exlibrisgroup.com:1921/41SLSP_NETWORK</target> <!-- Swisscovery nahradil NEBIS -->
 		<target>library.ox.ac.uk:210/ALEPH</target>
 		<target>lx2.loc.gov:210/LCDB</target>
+		<!--<target>katalog.kjm.cz:9909/kjm_u</target>-->
 	</profile>
 
 	<profile name="svkhk_1" type="z39.50">
@@ -98,17 +98,13 @@
 	</profile>
 
 	<profile name="tre_2" type="z39.50">
-		<target>frontie.cpk-infra.mzk.cz:9000/tre_1</target>
+		<target>www.knihovny.cz:9000/tre_1</target>
 		<target>aleph.muni.cz:9991/MUB01Z</target>
 		<target>aleph.svkpl.cz:9991/PNAAL</target>
-		<target>library.vse.cz:2100/default</target>
-		<!--<target>cougar.lib.vutbr.cz:9991/BUT01_PRIMO</target>-->
 		<target>aleph.osu.cz:9991/OSU01</target>
-		<target>web2.uk.tul.cz:9991/monografie</target>
-	</profile>
-
-	<profile name="loc" type="z39.50">
-		<target>lx2.loc.gov:210/LCDB</target>
+		<!--<target>library.vse.cz:2100/default</target>-->
+		<!--<target>cougar.lib.vutbr.cz:9991/BUT01_PRIMO</target>-->
+		<!--<target>web2.uk.tul.cz:9991/monografie</target>-->
 	</profile>
 
 	<profile name="all" type="z39.50">
@@ -119,11 +115,7 @@
 	<profile name="recursive" type="z39.50">
 		<target>lx2.loc.gov:210/LCDB</target>
 		<target>aleph.nkp.cz:9991/NKC-UTF</target>
-		<target>frontie.cpk-infra.mzk.cz:9000/cpk</target>
-	</profile>
-
-	<profile name="test" type="z39.50">
-		<target>aleph.lib.cas.cz:9991/AV-UTF</target>
+		<target>www.knihovny.cz:9000/cpk</target>
 	</profile>
 
 	<profile name="osu_01" type="z39.50">
@@ -133,10 +125,10 @@
 		<target>aleph.muni.cz:9991/MUB01Z</target> <!--Masarykova univerzita-->
 		<target>aleph.nkp.cz:9991/NKC-UTF</target> <!--Národní knihovna ČR-->
 		<target>aleph.nkp.cz:9991/SKC-UTF</target> <!--Souborný katalog ČR-->
-		<!--<target>aleph.ntkcz.cz:9991/SKT01</target> Národní technická knihovna-->
 		<target>library.ox.ac.uk:210/ALEPH</target> <!--Library of Oxford-->
 		<target>library.upol.cz:8889/upol_us_cat</target>
 		<target>aleph.vkol.cz:9991/SVK01UTF</target> <!--Vědecká knihovna Olomouc-->
+		<!--<target>aleph.ntkcz.cz:9991/SKT01</target> Národní technická knihovna-->
         </profile>
 
 
@@ -151,7 +143,7 @@
 	<profile name="npu_1" type="z39.50">
 		<target auth="CHUNPR2210/RD-7JTSx">z3950cat.bl.uk:9909/ZBLACU</target>
 		<target>lx2.loc.gov:210/LCDB</target>
-		<target>z3950.gbv.de/gvk</target>
+		<target>z3950.k10plus.de:210/opac-de-627</target> <!--GBV plus -->
 	</profile>
 
 	<profile name="lanius_1" type="z39.50">
@@ -175,16 +167,16 @@
 	</profile>
 
 	<profile name="cpk_nem" type="z39.50">
-		<target>z3950.gbv.de/gvk</target> <!--Der Gemeinsame Bibliotheksverbund (GBV) -->
-		<target>opac.nebis.ch:9909/NEBIS_UTF</target> <!--Zentralbibliothek Zürich-->
-		<target>aleph.unibas.ch:9909/IDS_ANSEL</target> <!--Universität Basel-->
+		<target>z3950.k10plus.de:210/opac-de-627</target> <!--GBV plus -->
+		<target>eu03.alma.exlibrisgroup.com:1921/41SLSP_NETWORK</target> <!--Swisscovery nahradilo NEBIS Zentralbibliothek Zürich-->
+		<!--<target>aleph.unibas.ch:9909/IDS_ANSEL</target> Universität Basel-->
 		<!--<target>z3950.obvsg.at:9991/acc01</target> Národní knihovna Rakouska-->
 	</profile>
 
 	<profile name="cpk_ger" type="z39.50">
-		<target>z3950.gbv.de/gvk</target> <!--Der Gemeinsame Bibliotheksverbund (GBV) -->
-		<target>opac.nebis.ch:9909/NEBIS_UTF</target> <!--Zentralbibliothek Zürich-->
-		<target>aleph.unibas.ch:9909/IDS_ANSEL</target> <!--Universität Basel-->
+		<target>z3950.k10plus.de:210/opac-de-627</target> <!--GBV plus -->
+		<target>eu03.alma.exlibrisgroup.com:1921/41SLSP_NETWORK</target> <!--Swisscovery nahradilo NEBIS Zentralbibliothek Zürich-->
+		<!--<target>aleph.unibas.ch:9909/IDS_ANSEL</target> Universität Basel-->
 		<!--<target>z3950.obvsg.at:9991/acc01</target> Národní knihovna Rakouska-->
 	</profile>
 
@@ -250,7 +242,7 @@
 	<profile name="cnb_03" type="z39.50">
 		<!--<target>195.113.12.38:2220/TITLES
 		</target>Katalog knihovny Centrum pro ekonomický výzkum a doktorské studium-->
-		<target>library.vse.cz:2100/default</target> <!--Vysoká škola ekonomická Praha-->
+		<!--<target>library.vse.cz:2100/default</target> Vysoká škola ekonomická Praha-->
 		<!--<target>katalog.iir.cz:9991/UMV</target> Ústav mezinárodních vztahů monografie-->
 	</profile>
 
@@ -259,17 +251,17 @@
 	</profile>
 
 	<profile name="cnb_05" type="z39.50">
-		<!--<target>z3950.copac.ac.uk:210/COPAC</target> MODS - COPAC CNL03976-->
 		<target auth="CHUNPR2210/RD-7JTSx">z3950cat.bl.uk:9909/ZBLACU</target> <!--British Library-->
-		<target auth="knihovnycz/knihovnycz1">amicus.collectionscanada.gc.ca:210/any
-		</target> <!--Národní knihovna Kanady-->
 		<target>library.ox.ac.uk:210/ALEPH</target> <!--Library of Oxford-->
+		<!--<target auth="knihovnycz/knihovnycz1">amicus.collectionscanada.gc.ca:210/any
+		</target> Národní knihovna Kanady-->
+		<!--<target>z3950.copac.ac.uk:210/COPAC</target> MODS - COPAC CNL03976-->
 	</profile>
 
 	<profile name="cnb_06" type="z39.50">
 		<target>imf.alma.exlibrisgroup.com:1921/01TIMF_INST</target> <!--World Bank-->
-		<target>z3950.gbv.de/gvk</target> <!--Der Gemeinsame Bibliotheksverbund (GBV) -->
-		<target>opac.nebis.ch:9909/NEBIS_UTF</target> <!--Zentralbibliothek Zürich-->
+		<target>z3950.k10plus.de:210/opac-de-627</target> <!--GBV plus -->
+		<target>eu03.alma.exlibrisgroup.com:1921/41SLSP_NETWORK</target> <!--Swisscovery nahradilo NEBIS Zentralbibliothek Zürich-->
 	</profile>
 
 	<profile name="cnb_07" type="z39.50">
@@ -305,15 +297,15 @@
 	</profile>
 
 	<profile name="muni_01" type="z39.50">
-		<target>ilsz3950.nlm.nih.gov:7091/VOYAGER</target> <!--National Library of Medicine-->
+		<!--<target>ilsz3950.nlm.nih.gov:7091/VOYAGER</target> National Library of Medicine-->
 		<target>195.113.87.235:9999/MEDVIK_utf</target> <!--Národní lékařská knihovna-->
 	</profile>
 
 	<profile name="kmda_01" type="z39.50">
 		<target>library.ox.ac.uk:210/ALEPH</target> <!--Library of Oxford-->
 		<target>www.knihovny.cz:9000/bnf</target> <!--Francouzská národní knihovna-->
-		<target>agama.ruk.cuni.cz:9992/CKSU</target> <!--Univerzita Karlova-->
-		<target>z3950.gbv.de/gvk</target> <!--Der Gemeinsame Bibliotheksverbund (GBV) -->
+		<target>z3950.k10plus.de:210/opac-de-627</target> <!--GBV plus -->
+		<!-- <target>agama.ruk.cuni.cz:9992/CKSU</target> Univerzita Karlova-->
 	</profile>
 	
 	<profile name="vsb_01" type="z39.50">
@@ -338,12 +330,12 @@
 
 	<profile name="czu_1" type="z39.50">
 		<target>lx2.loc.gov:210/LCDB</target> <!--Library of Congress-->
-		<!-- <target auth="knihovnycz/knihovnycz1">amicus.collectionscanada.gc.ca:210/any</target> --> <!--Národní knihovna Kanady-->
 		<target>z3950.snk.sk:1111/clas01</target> <!--KIS3G-->
 		<target>z3950.snk.sk:1111/clas02</target> <!--KIS3G-->
 		<target>library.ox.ac.uk:210/ALEPH</target> <!--Library of Oxford-->
-		<target>aleph.unibas.ch:9909/IDS_ANSEL</target> <!--Universität Basel-->
-		<target>ilsz3950.nlm.nih.gov:7091/VOYAGER</target> <!--National Library of Medicine-->
+		<!-- <target>aleph.unibas.ch:9909/IDS_ANSEL</target> Universität Basel-->
+		<!-- <target>ilsz3950.nlm.nih.gov:7091/VOYAGER</target> National Library of Medicine-->
+		<!-- <target auth="knihovnycz/knihovnycz1">amicus.collectionscanada.gc.ca:210/any</target> --> <!--Národní knihovna Kanady-->
 	</profile>
 
 	<profile name="australia" type="z39.50">
@@ -355,7 +347,7 @@
 	</profile>
 
 	<profile name="obvsg" type="z39.50">
-		<target>z3950.obvsg.at:9991/ACC01</target>
+		<!-- <target>z3950.obvsg.at:9991/ACC01</target> -->
 	</profile>
 
 	<profile name="sweden" type="z39.50">
@@ -384,6 +376,10 @@
 
 	<profile name="zagreb" type="z39.50">
 		<target>katalog.nsk.hr:9991/NSK01_WEB</target>
+	</profile>
+	
+	<profile name="loc" type="z39.50">
+		<target>lx2.loc.gov:210/LCDB</target>
 	</profile>
 
 	<profile name="deskovky" type="solr">
