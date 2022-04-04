@@ -46,7 +46,7 @@
 		<target>library.upol.cz:8889/upol_us_cat</target> <!--Univezita Palackého v Olomouci-->
 		<target>aleph.osu.cz:9991/OSU01</target> <!--Ostravská univezita-->
 		<target>verbis.vsb.cz:9991/cpk_univ</target> <!--Ústřední knihovna VŠB-TU Ostrava-->
-		<!--<target>aleph.ntkcz.cz:9991/SKT01</target> Národní technická knihovna-->
+		<target>aleph.techlib.cz:9991/STK01</target> <!--Národní technická knihovna-->
 		<!--<target>cougar.lib.vutbr.cz:9991/BUT01_PRIMO</target> Vysoké učební technické Brno-->
 		<!--<target>agama.ruk.cuni.cz:9992/CKSU</target> Univerzita Karlova-->
 		<!--<target>library.vse.cz:2100/default</target> Vysoká škola ekonomická Praha-->
@@ -60,7 +60,7 @@
 		<target>aleph.osu.cz:9991/OSU01</target>
 		<target>svk7.svkkl.cz:8887/kl_us_cat</target>
 		<!--<target>web2.uk.tul.cz:9991/monografie</target>-->
-		<!--<target>katalog.kjm.cz:9909/kjm_u</target>-->
+		<target>katalog.kjm.cz:8887/kjm_us_cat</target><!--Knihovna Jiřího Mahena-->
 		<!--<target>library.vse.cz:2100/default</target>-->
 		<!--<target>aleph.zcu.cz:9991/ZUP01_UTF</target>Západočeská univerzita temporary system error -->
 	</profile>
@@ -77,7 +77,7 @@
 		<target>eu03.alma.exlibrisgroup.com:1921/41SLSP_NETWORK</target> <!-- Swisscovery nahradil NEBIS -->
 		<target>library.ox.ac.uk:210/ALEPH</target>
 		<target>lx2.loc.gov:210/LCDB</target>
-		<!--<target>katalog.kjm.cz:9909/kjm_u</target>-->
+		<target>katalog.kjm.cz:8887/kjm_us_cat</target><!--Knihovna Jiřího Mahena-->
 	</profile>
 
 	<profile name="svkhk_1" type="z39.50">
@@ -128,7 +128,7 @@
 		<target>library.ox.ac.uk:210/ALEPH</target> <!--Library of Oxford-->
 		<target>library.upol.cz:8889/upol_us_cat</target>
 		<target>aleph.vkol.cz:9991/SVK01UTF</target> <!--Vědecká knihovna Olomouc-->
-		<!--<target>aleph.ntkcz.cz:9991/SKT01</target> Národní technická knihovna-->
+		<target>aleph.techlib.cz:9991/STK01</target> <!--Národní technická knihovna-->
         </profile>
 
 
@@ -282,7 +282,7 @@
 		<target>aleph.svkhk.cz:9991/KATALOG</target> <!--Studijní a vědecká knihovna v Hradci Králové-->
 		<target>arl.cbvk.cz:8888/cbvk_us_cat</target> <!--Jihočeská vědecká knihovna v Českých Budějovicích-->
 		<target>aleph.muni.cz:9991/MUB01Z</target> <!--Masarykova univerzita-->
-		<!-- to do Knihovna Jiřího Mahena-->
+		<target>katalog.kjm.cz:8887/kjm_us_cat</target><!--Knihovna Jiřího Mahena-->
 	</profile>
 
 	<profile name="mkp_02" type="z39.50">
