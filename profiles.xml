@@ -32,10 +32,10 @@
 		<target>carmin.sudoc.abes.fr:10646/abes-z39-public</target> <!--SUDOC - francouzský souborný katalog -->
 		<target>opac.sbn.it:2100/nopac</target> <!--ICCU - NK Itálie -->
 		<target>eu.alma.exlibrisgroup.com:1921/48OMNIS_NLOP</target> Polská národní knihovna-->
+		<target>na91.alma.exlibrisgroup.com:1921/01NLM_INST</target><!-- National Library of Medicine-->
 		<target>eu03.alma.exlibrisgroup.com:1921/41SLSP_NETWORK</target> <!--náhrada Nebis Swisscovery (Švýcarsko)-->
 		<!--<target>z3950.nb.no:2100/Norbok</target> Norská královská knihovna-->
 		<!--<target>aleph.unibas.ch:9909/IDS_ANSEL</target> Universität Basel-->
-		<!-- <target>ilsz3950.nlm.nih.gov:7091/VOYAGER</target> National Library of Medicine-->		
 	</profile>
 
 	<profile name="cpk_univ" type="z39.50" public="true" default="true">
@@ -297,7 +297,7 @@
 	</profile>
 
 	<profile name="muni_01" type="z39.50">
-		<!--<target>ilsz3950.nlm.nih.gov:7091/VOYAGER</target> National Library of Medicine-->
+		<target><target>na91.alma.exlibrisgroup.com:1921/01NLM_INST</target><!-- National Library of Medicine-->
 		<target>195.113.87.235:9999/MEDVIK_utf</target> <!--Národní lékařská knihovna-->
 	</profile>
 
@@ -334,7 +334,7 @@
 		<target>z3950.snk.sk:1111/clas02</target> <!--KIS3G-->
 		<target>library.ox.ac.uk:210/ALEPH</target> <!--Library of Oxford-->
 		<!-- <target>aleph.unibas.ch:9909/IDS_ANSEL</target> Universität Basel-->
-		<!-- <target>ilsz3950.nlm.nih.gov:7091/VOYAGER</target> National Library of Medicine-->
+		<target>na91.alma.exlibrisgroup.com:1921/01NLM_INST</target><!-- National Library of Medicine-->
 		<!-- <target auth="knihovnycz/knihovnycz1">amicus.collectionscanada.gc.ca:210/any</target> --> <!--Národní knihovna Kanady-->
 	</profile>
 
