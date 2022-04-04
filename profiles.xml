@@ -297,7 +297,7 @@
 	</profile>
 
 	<profile name="muni_01" type="z39.50">
-		<target><target>na91.alma.exlibrisgroup.com:1921/01NLM_INST</target><!-- National Library of Medicine-->
+		<target>na91.alma.exlibrisgroup.com:1921/01NLM_INST</target><!-- National Library of Medicine-->
 		<target>195.113.87.235:9999/MEDVIK_utf</target> <!--Národní lékařská knihovna-->
 	</profile>
 
