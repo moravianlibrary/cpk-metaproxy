@@ -43,7 +43,7 @@
 		<target>aleph.zcu.cz:9991/ZUP01_UTF</target> <!--Západočeská univerzita-->
 		<target>aleph.muni.cz:9991/MUB01Z</target> <!--Masarykova univerzita-->
 		<target>katalog.k.utb.cz:9991/UTB01_WEB</target> <!--Univerzita Tomáše Bati ve Zlíně-->
-		<target>library.upol.cz:8889/upol_us_cat</target> <!--Univezita Palackého v Olomouci-->
+		<!--<target>library.upol.cz:8889/upol_us_cat</target> Univezita Palackého v Olomouci-->
 		<target>aleph.osu.cz:9991/OSU01</target> <!--Ostravská univezita-->
 		<target>verbis.vsb.cz:9991/cpk_univ</target> <!--Ústřední knihovna VŠB-TU Ostrava-->
 		<target>aleph.techlib.cz:9991/STK01</target> <!--Národní technická knihovna-->
@@ -126,7 +126,7 @@
 		<target>aleph.nkp.cz:9991/NKC-UTF</target> <!--Národní knihovna ČR-->
 		<target>aleph.nkp.cz:9991/SKC-UTF</target> <!--Souborný katalog ČR-->
 		<target>library.ox.ac.uk:210/ALEPH</target> <!--Library of Oxford-->
-		<target>library.upol.cz:8889/upol_us_cat</target>
+		<!--<target>library.upol.cz:8889/upol_us_cat</target> Upol-->
 		<target>aleph.vkol.cz:9991/SVK01UTF</target> <!--Vědecká knihovna Olomouc-->
 		<target>aleph.techlib.cz:9991/STK01</target> <!--Národní technická knihovna-->
         </profile>
