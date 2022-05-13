@@ -47,8 +47,8 @@
 		<target>aleph.osu.cz:9991/OSU01</target> <!--Ostravská univezita-->
 		<target>verbis.vsb.cz:9991/cpk_univ</target> <!--Ústřední knihovna VŠB-TU Ostrava-->
 		<target>aleph.techlib.cz:9991/STK01</target> <!--Národní technická knihovna-->
+		<target>alma.cuni.cz:1921/420CKIS_INST</target> <!--Univerzita Karlova-->
 		<!--<target>cougar.lib.vutbr.cz:9991/BUT01_PRIMO</target> Vysoké učební technické Brno-->
-		<!--<target>agama.ruk.cuni.cz:9992/CKSU</target> Univerzita Karlova-->
 		<!--<target>library.vse.cz:2100/default</target> Vysoká škola ekonomická Praha-->
 		<!--<target>web2.uk.tul.cz:9991/monografie</target>Technická univerzita v Liberci-->
 	</profile>
