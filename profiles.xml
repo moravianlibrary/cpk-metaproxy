@@ -1,6 +1,6 @@
 <profiles>
 
-	<defaultSolrUrl>http://frontie.cpk-infra.mzk.cz:6081/solr/index</defaultSolrUrl>
+	<defaultSolrUrl>http://solr-main-replica.app.knihovny.cz/solr/index</defaultSolrUrl>
 
 	<profile name="cpk" type="solr">
 		<description>Záznamy knihovny.cz</description>
