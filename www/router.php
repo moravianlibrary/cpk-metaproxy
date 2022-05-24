@@ -75,6 +75,7 @@ if (!empty($profile['filters'])) {
 }
 $urlHelper->addParameter('fq', 'merged_boolean:true');
 $urlHelper->addParameter('fl', 'id,fullrecord,[child parentFilter=merged_boolean:true]');
+$urlHelper->addParameter('wt', 'xml');
 
 $url = $urlHelper->getUrl();
 
