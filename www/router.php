@@ -61,7 +61,7 @@ foreach ($_GET as $key => $value) {
 $profile = $profiles[$_GET['profile']];
 $institutions = $profile['institutions'];
 if (!empty($profile['institutions'])) {
-	$urlHelper->addParameter('fq', "{!parent which='merged_boolean:true'} local_institution_facet_str_mv:(\"" . implode('" OR "', $profile['institutions']) . "\")");
+	$urlHelper->addParameter('fq', "{!parent which='merged_boolean:true'} local_region_institution_facet_mv:(\"" . implode('" OR "', $profile['institutions']) . "\")");
 }
 if (!empty($profile['mergedFilters'])) {
 	foreach ($profile['mergedFilters'] as $filter) {
@@ -87,7 +87,7 @@ foreach ($xml->result->doc as $document) {
 	$candidate = null;
 	$candidateOrder = PHP_INT_MAX;
 	foreach ($document->doc as $nested) {
-		$sources = $nested->xpath("./arr[@name='local_institution_facet_str_mv']")[0]->str;
+		$sources = $nested->xpath("./arr[@name='local_region_institution_facet_mv']")[0]->str;
 		$index = PHP_INT_MAX;
 		foreach ($sources as $source) {
 			$key = array_search($source, $institutions);
