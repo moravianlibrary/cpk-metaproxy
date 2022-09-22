@@ -388,5 +388,15 @@
 			<filter>cpk_detected_format_facet_str_mv:"0/BOARD_GAMES/"</filter>
 		</mergedFilters>
 	</profile>
-	
+
+	<profile name="cetelib" type="solr">
+		<description>Česká literární bibliografie</description>
+		<institutions>
+			<institution>2/Others/bibliography/CELITEBIB/</institution>
+		</institutions>
+		<filters>
+			<filter>cpk_detected_format_facet_str_mv:"0/ARTICLES/"</filter>
+		</filters>
+	</profile>
+
 </profiles>
