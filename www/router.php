@@ -7,11 +7,12 @@ $profiles = array();
 foreach ($profilesXml->profile as $profileXml) {
 	$type = (string) $profileXml->attributes()->type;
 	if ($type !== 'solr') {
-		break;
+		continue;
 	}
 	$name = (string) $profileXml->attributes()->name;
 	$profile = array(
 		'institutions' => array(),
+		'mergedFilters' => array(),
 		'filters' => array(),
 	);
 	if (is_object($profileXml->institutions->institution)) {
