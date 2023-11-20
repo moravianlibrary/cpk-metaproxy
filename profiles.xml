@@ -49,7 +49,7 @@
 		<target>aleph.techlib.cz:9991/STK01</target> <!--Národní technická knihovna-->
 		<target>alma.cuni.cz:1921/420CKIS_INST</target> <!--Univerzita Karlova-->
 		<!--<target>cougar.lib.vutbr.cz:9991/BUT01_PRIMO</target> Vysoké učební technické Brno-->
-		<!--<target>library.vse.cz:2100/default</target> Vysoká škola ekonomická Praha-->
+		<target>aleph.vse.cz:2100/default</target> <!--Vysoká škola ekonomická Praha-->
 		<!--<target>web2.uk.tul.cz:9991/monografie</target>Technická univerzita v Liberci-->
 	</profile>
 
@@ -61,7 +61,7 @@
 		<!-- <target>svk7.svkkl.cz:8887/kl_us_cat</target>-->
 		<!--<target>web2.uk.tul.cz:9991/monografie</target>-->
 		<target>katalog.kjm.cz:8887/kjm_us_cat</target><!--Knihovna Jiřího Mahena-->
-		<!--<target>library.vse.cz:2100/default</target>-->
+		<target>aleph.vse.cz:2100/default</target> <!--Vysoká škola ekonomická Praha-->
 		<!--<target>aleph.zcu.cz:9991/ZUP01_UTF</target>Západočeská univerzita temporary system error -->
 	</profile>
 
@@ -72,7 +72,7 @@
 	<profile name="uk_1" type="z39.50">
 		<target>aleph.svkpl.cz:9991/PNAAL</target>
 		<target>aleph.muni.cz:9991/MUB01Z</target>
-		<target>library.vse.cz:2100/default</target>
+		<target>aleph.vse.cz:2100/default</target> <!--Vysoká škola ekonomická Praha-->
 		<target>eu01.alma.exlibrisgroup.com:210/47BIBSYS_NETWORK</target>
 		<target>eu03.alma.exlibrisgroup.com:1921/41SLSP_NETWORK</target> <!-- Swisscovery nahradil NEBIS -->
 		<target>library.ox.ac.uk:210/ALEPH</target>
@@ -102,7 +102,7 @@
 		<target>aleph.muni.cz:9991/MUB01Z</target>
 		<target>aleph.svkpl.cz:9991/PNAAL</target>
 		<target>aleph.osu.cz:9991/OSU01</target>
-		<!--<target>library.vse.cz:2100/default</target>-->
+		<target>aleph.vse.cz:2100/default</target> <!--Vysoká škola ekonomická Praha-->
 		<!--<target>cougar.lib.vutbr.cz:9991/BUT01_PRIMO</target>-->
 		<!--<target>web2.uk.tul.cz:9991/monografie</target>-->
 	</profile>
@@ -242,7 +242,7 @@
 	<profile name="cnb_03" type="z39.50">
 		<!--<target>195.113.12.38:2220/TITLES
 		</target>Katalog knihovny Centrum pro ekonomický výzkum a doktorské studium-->
-		<!--<target>library.vse.cz:2100/default</target> Vysoká škola ekonomická Praha-->
+		<target>aleph.vse.cz:2100/default</target> <!--Vysoká škola ekonomická Praha-->
 		<!--<target>katalog.iir.cz:9991/UMV</target> Ústav mezinárodních vztahů monografie-->
 	</profile>
 
