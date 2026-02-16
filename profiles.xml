@@ -2,8 +2,8 @@
 
 	<defaultSolrUrl>http://solr-main-replica.app.knihovny.cz/solr/index</defaultSolrUrl>
 
-	<profile name="cpk" type="solr">
-		<description>Záznamy knihovny.cz</description>
+	<profile name="cpk-unverified" type="solr">
+		<description>Záznamy knihovny.cz - nutná kontrola při lokalizaci</description>
 		<mergedFilters>
 			<filter>metaproxy_boolean:true</filter>
 		</mergedFilters>
@@ -397,6 +397,13 @@
 		<filters>
 			<filter>cpk_detected_format_facet_str_mv:"0/ARTICLES/"</filter>
 		</filters>
+	</profile>
+
+	<profile name="bibliografie" type="solr">
+		<description>Bibliografie zapojené do Knihovny.cz</description>
+		<institutions>
+			<institution>2/Others/bibliography/</institution>
+		</institutions>
 	</profile>
 
 </profiles>
