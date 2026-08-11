@@ -69,6 +69,11 @@
 		<target>aleph.nkp.cz:9991/NKC-UTF</target> <!-- Národní knihovna-->
 	</profile>
 
+    <profile name="cpk_cnb" type="z39.50">
+		<target>aleph.nkp.cz:9991/CNB-UTF</target> <!-- Národní knihovna - Česká národní bibliografie-->
+	</profile>
+	
+
 	<profile name="uk_1" type="z39.50">
 		<target>aleph.svkpl.cz:9991/PNAAL</target>
 		<target>aleph.muni.cz:9991/MUB01Z</target>
